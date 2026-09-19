@@ -1,0 +1,1686 @@
+{
+  "counts": {
+    "APPLIED_SONAME": 9,
+    "CLASSIFIED_NOT_IMPORTED": 38,
+    "BLOCKED_LOADER": 1,
+    "APPLIED_PACKAGING": 16,
+    "APPLIED_REQUIRED": 5
+  },
+  "rows": [
+    {
+      "group": "device",
+      "expected_source": "odm/lib64/libvega_common_ecd.so",
+      "reference_destination": "odm/lib64/libvega_common_ecd.so",
+      "reference_options": [
+        "FIX_SONAME"
+      ],
+      "exists": true,
+      "applied": true,
+      "stock_soname": "libvega_common.so",
+      "source_sha256": "cbc4f5976ba1b2d6975f8e32c19e9fe183c6f28f1f628cb84db4dd40ec8e19b3",
+      "status": "APPLIED_SONAME",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "FIX_SONAME"
+      ],
+      "id": "OPT-001",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "Fixup-Option erforderlich",
+      "reason": "ELF check requires installed basename as DT_SONAME; original mismatch verified and only metadata normalized.",
+      "evidence": [
+        "libvega_common.so",
+        "libvega_common_ecd.so",
+        "build/make/tools/check_elf_file.py:check_dt_soname"
+      ],
+      "original_sha256": "cbc4f5976ba1b2d6975f8e32c19e9fe183c6f28f1f628cb84db4dd40ec8e19b3",
+      "output_sha256": "dc6a4e6163aedb6ac4f6589db355f7c3d3dfa4023ee91a4f591f066f8f9d16b1",
+      "result_soname": "libvega_common_ecd.so"
+    },
+    {
+      "group": "device",
+      "expected_source": "vendor/lib64/camera/components/com.qti.node.dewarp.so",
+      "reference_destination": "vendor/lib64/camera/components/com.qti.node.dewarp.so",
+      "reference_options": [
+        "DISABLE_DEPS"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "com.qti.node.dewarp.so",
+      "source_sha256": "2b300627ca6bb5294ca4a63b2a0aa606d595463417ea37220102ead682ef60df",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_DEPS"
+      ],
+      "id": "OPT-002",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "device",
+      "expected_source": "vendor/lib64/libdng_sdk.so",
+      "reference_destination": "vendor/lib64/libdng_sdk-myron.so",
+      "reference_options": [
+        "FIX_SONAME"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "libdng_sdk.so",
+      "source_sha256": "cdcf34c3d772defc403ad97c972d67b38b1e9531005a1490d4433d660520500d",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "FIX_SONAME"
+      ],
+      "id": "OPT-003",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "Proposed destination rename is not selected; original stock SONAME already equals retained filename.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "device",
+      "expected_source": "vendor/lib64/libmicamera_aidl_device_adaptor.so",
+      "reference_destination": "vendor/lib64/libmicamera_aidl_device_adaptor.so",
+      "reference_options": [
+        "DISABLE_DEPS"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "libmicamera_aidl_device_adaptor.so",
+      "source_sha256": "944de68100aa7ccfd1c5cc6f6687a2f54fcbb5a3fa44361cd369dad465ecb9b5",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_DEPS"
+      ],
+      "id": "OPT-004",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "device",
+      "expected_source": "vendor/lib64/libmicamera_aidl_device.so",
+      "reference_destination": "vendor/lib64/libmicamera_aidl_device.so",
+      "reference_options": [
+        "DISABLE_DEPS"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "libmicamera_aidl_device.so",
+      "source_sha256": "1aaa0b4a5df6cf3a6696eade527ffb53bbe3332cc1e63ac2aef31877d0dc3fd0",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_DEPS"
+      ],
+      "id": "OPT-005",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "device",
+      "expected_source": "vendor/lib64/libmicamera_aidl_provider.so",
+      "reference_destination": "vendor/lib64/libmicamera_aidl_provider.so",
+      "reference_options": [
+        "DISABLE_DEPS"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "libmicamera_aidl_provider.so",
+      "source_sha256": "f2cc9c51439916cf11115c9d157254467d5df9f0faad262cdbbdf15f48ae7885",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_DEPS"
+      ],
+      "id": "OPT-006",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "device",
+      "expected_source": "vendor/lib64/libmicamera_aidl_utils.so",
+      "reference_destination": "vendor/lib64/libmicamera_aidl_utils.so",
+      "reference_options": [
+        "DISABLE_DEPS"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "libmicamera_aidl_utils.so",
+      "source_sha256": "37f733772a8167beabb5fa1784b321537b6b1443104d66a51024df1fbac53856",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_DEPS"
+      ],
+      "id": "OPT-007",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "device",
+      "expected_source": "vendor/lib64/libSnpeDspV66Stub.so",
+      "reference_destination": "vendor/lib64/libSnpeDspV66Stub.so",
+      "reference_options": [
+        "FIX_SONAME"
+      ],
+      "exists": true,
+      "applied": true,
+      "stock_soname": "libSnpeDspStub.so",
+      "source_sha256": "ca99c7fad8c145ab11bff049f05e9507fc33ca5a786975d070688b526e2514a8",
+      "status": "APPLIED_SONAME",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "FIX_SONAME"
+      ],
+      "id": "OPT-008",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "Fixup-Option erforderlich",
+      "reason": "ELF check requires installed basename as DT_SONAME; original mismatch verified and only metadata normalized.",
+      "evidence": [
+        "libSnpeDspStub.so",
+        "libSnpeDspV66Stub.so",
+        "build/make/tools/check_elf_file.py:check_dt_soname"
+      ],
+      "original_sha256": "ca99c7fad8c145ab11bff049f05e9507fc33ca5a786975d070688b526e2514a8",
+      "output_sha256": "60caa715116d14c8840a61204e994e906f4384fefefe704e7d798dd24b38d140",
+      "result_soname": "libSnpeDspV66Stub.so"
+    },
+    {
+      "group": "device",
+      "expected_source": "vendor/lib64/libSnpeHtpV68CalculatorStub.so",
+      "reference_destination": "vendor/lib64/libSnpeHtpV68CalculatorStub.so",
+      "reference_options": [
+        "FIX_SONAME"
+      ],
+      "exists": true,
+      "applied": true,
+      "stock_soname": "libQnnHtpV68CalculatorStub.so",
+      "source_sha256": "5721bc8871111941f68560dc6b7d98b971707d14099a5c73bac4004e3f11b324",
+      "status": "APPLIED_SONAME",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "FIX_SONAME"
+      ],
+      "id": "OPT-009",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "Fixup-Option erforderlich",
+      "reason": "ELF check requires installed basename as DT_SONAME; original mismatch verified and only metadata normalized.",
+      "evidence": [
+        "libQnnHtpV68CalculatorStub.so",
+        "libSnpeHtpV68CalculatorStub.so",
+        "build/make/tools/check_elf_file.py:check_dt_soname"
+      ],
+      "original_sha256": "5721bc8871111941f68560dc6b7d98b971707d14099a5c73bac4004e3f11b324",
+      "output_sha256": "2b1453d3412cd6f3fc82f8886f0c715646e96883af873f05fa69f772bf567587",
+      "result_soname": "libSnpeHtpV68CalculatorStub.so"
+    },
+    {
+      "group": "device",
+      "expected_source": "vendor/lib64/libSnpeHtpV69CalculatorStub.so",
+      "reference_destination": "vendor/lib64/libSnpeHtpV69CalculatorStub.so",
+      "reference_options": [
+        "FIX_SONAME"
+      ],
+      "exists": true,
+      "applied": true,
+      "stock_soname": "libQnnHtpV69CalculatorStub.so",
+      "source_sha256": "113574ef971f6d4422e7dcabef888901e69c072cd377f0b72991ad67480e0dc1",
+      "status": "APPLIED_SONAME",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "FIX_SONAME"
+      ],
+      "id": "OPT-010",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "Fixup-Option erforderlich",
+      "reason": "ELF check requires installed basename as DT_SONAME; original mismatch verified and only metadata normalized.",
+      "evidence": [
+        "libQnnHtpV69CalculatorStub.so",
+        "libSnpeHtpV69CalculatorStub.so",
+        "build/make/tools/check_elf_file.py:check_dt_soname"
+      ],
+      "original_sha256": "113574ef971f6d4422e7dcabef888901e69c072cd377f0b72991ad67480e0dc1",
+      "output_sha256": "e59f3651e81d64e15680ce7e5594565fc9048435aa42950f00cb743208167468",
+      "result_soname": "libSnpeHtpV69CalculatorStub.so"
+    },
+    {
+      "group": "device",
+      "expected_source": "vendor/lib64/libSnpeHtpV73CalculatorStub.so",
+      "reference_destination": "vendor/lib64/libSnpeHtpV73CalculatorStub.so",
+      "reference_options": [
+        "FIX_SONAME"
+      ],
+      "exists": true,
+      "applied": true,
+      "stock_soname": "libQnnHtpV73CalculatorStub.so",
+      "source_sha256": "a47506ed710933a4e72358c449779fbd7b93d955deb2bcf975d9c30c6fcd8781",
+      "status": "APPLIED_SONAME",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "FIX_SONAME"
+      ],
+      "id": "OPT-011",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "Fixup-Option erforderlich",
+      "reason": "ELF check requires installed basename as DT_SONAME; original mismatch verified and only metadata normalized.",
+      "evidence": [
+        "libQnnHtpV73CalculatorStub.so",
+        "libSnpeHtpV73CalculatorStub.so",
+        "build/make/tools/check_elf_file.py:check_dt_soname"
+      ],
+      "original_sha256": "a47506ed710933a4e72358c449779fbd7b93d955deb2bcf975d9c30c6fcd8781",
+      "output_sha256": "b13df226e526e1e830adef29a82a3917cbd794aa9ac976438f42cf74aa95aeec",
+      "result_soname": "libSnpeHtpV73CalculatorStub.so"
+    },
+    {
+      "group": "device",
+      "expected_source": "vendor/lib64/libSnpeHtpV75CalculatorStub.so",
+      "reference_destination": "vendor/lib64/libSnpeHtpV75CalculatorStub.so",
+      "reference_options": [
+        "FIX_SONAME"
+      ],
+      "exists": true,
+      "applied": true,
+      "stock_soname": "libQnnHtpV75CalculatorStub.so",
+      "source_sha256": "9b252ae0704e11e8680a6ebfa8d43210f0059cd21763c5a2f20590a8ebb3afe3",
+      "status": "APPLIED_SONAME",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "FIX_SONAME"
+      ],
+      "id": "OPT-012",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "Fixup-Option erforderlich",
+      "reason": "ELF check requires installed basename as DT_SONAME; original mismatch verified and only metadata normalized.",
+      "evidence": [
+        "libQnnHtpV75CalculatorStub.so",
+        "libSnpeHtpV75CalculatorStub.so",
+        "build/make/tools/check_elf_file.py:check_dt_soname"
+      ],
+      "original_sha256": "9b252ae0704e11e8680a6ebfa8d43210f0059cd21763c5a2f20590a8ebb3afe3",
+      "output_sha256": "9e54b0726923319c71d3a6484aaa936f3428840ecc9fe030b94daa5f5b440e8a",
+      "result_soname": "libSnpeHtpV75CalculatorStub.so"
+    },
+    {
+      "group": "device",
+      "expected_source": "vendor/lib64/libSnpeHtpV79CalculatorStub.so",
+      "reference_destination": "vendor/lib64/libSnpeHtpV79CalculatorStub.so",
+      "reference_options": [
+        "FIX_SONAME"
+      ],
+      "exists": true,
+      "applied": true,
+      "stock_soname": "libQnnHtpV79CalculatorStub.so",
+      "source_sha256": "bb6a7b09919bbb47f2ca06e3e5b46c70457185980ed2eb93d1e9349624e0d67c",
+      "status": "APPLIED_SONAME",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "FIX_SONAME"
+      ],
+      "id": "OPT-013",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "Fixup-Option erforderlich",
+      "reason": "ELF check requires installed basename as DT_SONAME; original mismatch verified and only metadata normalized.",
+      "evidence": [
+        "libQnnHtpV79CalculatorStub.so",
+        "libSnpeHtpV79CalculatorStub.so",
+        "build/make/tools/check_elf_file.py:check_dt_soname"
+      ],
+      "original_sha256": "bb6a7b09919bbb47f2ca06e3e5b46c70457185980ed2eb93d1e9349624e0d67c",
+      "output_sha256": "0001173a783227a83967377a13d95bca08257b4de75e439e61aa7e0dc07949c0",
+      "result_soname": "libSnpeHtpV79CalculatorStub.so"
+    },
+    {
+      "group": "device",
+      "expected_source": "vendor/lib64/libSnpeHtpV81CalculatorStub.so",
+      "reference_destination": "vendor/lib64/libSnpeHtpV81CalculatorStub.so",
+      "reference_options": [
+        "FIX_SONAME"
+      ],
+      "exists": true,
+      "applied": true,
+      "stock_soname": "libQnnHtpV81CalculatorStub.so",
+      "source_sha256": "288d381557e3678d0bb1c7461ae272ffa1482ed4598e25edba6b2cbbfdae6465",
+      "status": "APPLIED_SONAME",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "FIX_SONAME"
+      ],
+      "id": "OPT-014",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "Fixup-Option erforderlich",
+      "reason": "ELF check requires installed basename as DT_SONAME; original mismatch verified and only metadata normalized.",
+      "evidence": [
+        "libQnnHtpV81CalculatorStub.so",
+        "libSnpeHtpV81CalculatorStub.so",
+        "build/make/tools/check_elf_file.py:check_dt_soname"
+      ],
+      "original_sha256": "288d381557e3678d0bb1c7461ae272ffa1482ed4598e25edba6b2cbbfdae6465",
+      "output_sha256": "a098295a51b19a4e33e09bd23bbd7f7700f6d22fa3bc1e6a9dfd4d569991da51",
+      "result_soname": "libSnpeHtpV81CalculatorStub.so"
+    },
+    {
+      "group": "device",
+      "expected_source": "vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so",
+      "reference_destination": "vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so",
+      "reference_options": [
+        "DISABLE_DEPS"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "vendor.qti.hardware.camera.offlinecamera-service-impl.so",
+      "source_sha256": "3a1b959477370be4df2da2ef8b7120f8230a5faf79b0111d8b996a99e6230633",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_DEPS"
+      ],
+      "id": "OPT-015",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "device",
+      "expected_source": "odm/lib64/hw/fingerprint.goodix_us2.so",
+      "reference_destination": "odm/lib64/hw/fingerprint.goodix_us2.default.so",
+      "reference_options": [
+        "FIX_SONAME"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "fingerprint.goodix_us2.so",
+      "source_sha256": "cbd8865b97dd4de2a25294a4dd01f63c0a52ac7f68788df05bc1be33b9f468c2",
+      "status": "BLOCKED_LOADER",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "FIX_SONAME"
+      ],
+      "id": "OPT-016",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "echter ungel\u00f6ster Fehler",
+      "reason": "Current Xiaomi wrapper kModules does not include goodix_us2; merely adding .default alias cannot make this consumer select the module.",
+      "evidence": [
+        "hardware/xiaomi/aidl/fingerprint/Fingerprint.cpp:35-38"
+      ]
+    },
+    {
+      "group": "device",
+      "expected_source": "odm/firmware/0_click_P_RTP.bin",
+      "reference_destination": "vendor/etc/vibrator/effect_0.bin",
+      "reference_options": [],
+      "exists": true,
+      "applied": true,
+      "stock_soname": null,
+      "source_sha256": "43f3146f2f4abe53f92fe21ddea006742385110ce015c1fb045d622615bc34b5",
+      "status": "APPLIED_PACKAGING",
+      "resolved_build_options": [],
+      "unresolved_options": [],
+      "id": "OPT-017",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nur Packaging-Alias",
+      "reason": "Current effect library explicitly opens this destination; source bytes remain selected stock.",
+      "evidence": [
+        "hardware/xiaomi/vibrator/effect/effect.cpp:63-65",
+        "device/xiaomi/nezha/device.mk",
+        "43f3146f2f4abe53f92fe21ddea006742385110ce015c1fb045d622615bc34b5"
+      ]
+    },
+    {
+      "group": "device",
+      "expected_source": "odm/firmware/0_click_P_RTP.bin",
+      "reference_destination": "vendor/etc/vibrator/primitive_effect_0.bin",
+      "reference_options": [],
+      "exists": true,
+      "applied": true,
+      "stock_soname": null,
+      "source_sha256": "43f3146f2f4abe53f92fe21ddea006742385110ce015c1fb045d622615bc34b5",
+      "status": "APPLIED_PACKAGING",
+      "resolved_build_options": [],
+      "unresolved_options": [],
+      "id": "OPT-018",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nur Packaging-Alias",
+      "reason": "Current effect library explicitly opens this destination; source bytes remain selected stock.",
+      "evidence": [
+        "hardware/xiaomi/vibrator/effect/effect.cpp:63-65",
+        "device/xiaomi/nezha/device.mk",
+        "43f3146f2f4abe53f92fe21ddea006742385110ce015c1fb045d622615bc34b5"
+      ]
+    },
+    {
+      "group": "device",
+      "expected_source": "odm/firmware/1_doubelClick_P_RTP.bin",
+      "reference_destination": "vendor/etc/vibrator/effect_1.bin",
+      "reference_options": [],
+      "exists": true,
+      "applied": true,
+      "stock_soname": null,
+      "source_sha256": "062669479ef1992132ca552544ae06b851c4d7815cc59cf09a4b98365087eb7d",
+      "status": "APPLIED_PACKAGING",
+      "resolved_build_options": [],
+      "unresolved_options": [],
+      "id": "OPT-019",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nur Packaging-Alias",
+      "reason": "Current effect library explicitly opens this destination; source bytes remain selected stock.",
+      "evidence": [
+        "hardware/xiaomi/vibrator/effect/effect.cpp:63-65",
+        "device/xiaomi/nezha/device.mk",
+        "062669479ef1992132ca552544ae06b851c4d7815cc59cf09a4b98365087eb7d"
+      ]
+    },
+    {
+      "group": "device",
+      "expected_source": "odm/firmware/1_doubelClick_P_RTP.bin",
+      "reference_destination": "vendor/etc/vibrator/primitive_effect_1.bin",
+      "reference_options": [],
+      "exists": true,
+      "applied": true,
+      "stock_soname": null,
+      "source_sha256": "062669479ef1992132ca552544ae06b851c4d7815cc59cf09a4b98365087eb7d",
+      "status": "APPLIED_PACKAGING",
+      "resolved_build_options": [],
+      "unresolved_options": [],
+      "id": "OPT-020",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nur Packaging-Alias",
+      "reason": "Current effect library explicitly opens this destination; source bytes remain selected stock.",
+      "evidence": [
+        "hardware/xiaomi/vibrator/effect/effect.cpp:63-65",
+        "device/xiaomi/nezha/device.mk",
+        "062669479ef1992132ca552544ae06b851c4d7815cc59cf09a4b98365087eb7d"
+      ]
+    },
+    {
+      "group": "device",
+      "expected_source": "odm/firmware/2_tick_P_RTP.bin",
+      "reference_destination": "vendor/etc/vibrator/effect_2.bin",
+      "reference_options": [],
+      "exists": true,
+      "applied": true,
+      "stock_soname": null,
+      "source_sha256": "ebf9baf75c42475cb34d7dc6cdeb07720b05fd11be2d8eaf9d9a7d37a3fc939c",
+      "status": "APPLIED_PACKAGING",
+      "resolved_build_options": [],
+      "unresolved_options": [],
+      "id": "OPT-021",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nur Packaging-Alias",
+      "reason": "Current effect library explicitly opens this destination; source bytes remain selected stock.",
+      "evidence": [
+        "hardware/xiaomi/vibrator/effect/effect.cpp:63-65",
+        "device/xiaomi/nezha/device.mk",
+        "ebf9baf75c42475cb34d7dc6cdeb07720b05fd11be2d8eaf9d9a7d37a3fc939c"
+      ]
+    },
+    {
+      "group": "device",
+      "expected_source": "odm/firmware/2_tick_P_RTP.bin",
+      "reference_destination": "vendor/etc/vibrator/primitive_effect_2.bin",
+      "reference_options": [],
+      "exists": true,
+      "applied": true,
+      "stock_soname": null,
+      "source_sha256": "ebf9baf75c42475cb34d7dc6cdeb07720b05fd11be2d8eaf9d9a7d37a3fc939c",
+      "status": "APPLIED_PACKAGING",
+      "resolved_build_options": [],
+      "unresolved_options": [],
+      "id": "OPT-022",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nur Packaging-Alias",
+      "reason": "Current effect library explicitly opens this destination; source bytes remain selected stock.",
+      "evidence": [
+        "hardware/xiaomi/vibrator/effect/effect.cpp:63-65",
+        "device/xiaomi/nezha/device.mk",
+        "ebf9baf75c42475cb34d7dc6cdeb07720b05fd11be2d8eaf9d9a7d37a3fc939c"
+      ]
+    },
+    {
+      "group": "device",
+      "expected_source": "odm/firmware/3_thud_P_RTP.bin",
+      "reference_destination": "vendor/etc/vibrator/effect_3.bin",
+      "reference_options": [],
+      "exists": true,
+      "applied": true,
+      "stock_soname": null,
+      "source_sha256": "bb3fadef81e3407456042b63a0c0cf06782cad5164daa099dde57b1ae491b758",
+      "status": "APPLIED_PACKAGING",
+      "resolved_build_options": [],
+      "unresolved_options": [],
+      "id": "OPT-023",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nur Packaging-Alias",
+      "reason": "Current effect library explicitly opens this destination; source bytes remain selected stock.",
+      "evidence": [
+        "hardware/xiaomi/vibrator/effect/effect.cpp:63-65",
+        "device/xiaomi/nezha/device.mk",
+        "bb3fadef81e3407456042b63a0c0cf06782cad5164daa099dde57b1ae491b758"
+      ]
+    },
+    {
+      "group": "device",
+      "expected_source": "odm/firmware/3_thud_P_RTP.bin",
+      "reference_destination": "vendor/etc/vibrator/primitive_effect_3.bin",
+      "reference_options": [],
+      "exists": true,
+      "applied": true,
+      "stock_soname": null,
+      "source_sha256": "bb3fadef81e3407456042b63a0c0cf06782cad5164daa099dde57b1ae491b758",
+      "status": "APPLIED_PACKAGING",
+      "resolved_build_options": [],
+      "unresolved_options": [],
+      "id": "OPT-024",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nur Packaging-Alias",
+      "reason": "Current effect library explicitly opens this destination; source bytes remain selected stock.",
+      "evidence": [
+        "hardware/xiaomi/vibrator/effect/effect.cpp:63-65",
+        "device/xiaomi/nezha/device.mk",
+        "bb3fadef81e3407456042b63a0c0cf06782cad5164daa099dde57b1ae491b758"
+      ]
+    },
+    {
+      "group": "device",
+      "expected_source": "odm/firmware/4_pop_P_RTP.bin",
+      "reference_destination": "vendor/etc/vibrator/effect_4.bin",
+      "reference_options": [],
+      "exists": true,
+      "applied": true,
+      "stock_soname": null,
+      "source_sha256": "bb3fadef81e3407456042b63a0c0cf06782cad5164daa099dde57b1ae491b758",
+      "status": "APPLIED_PACKAGING",
+      "resolved_build_options": [],
+      "unresolved_options": [],
+      "id": "OPT-025",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nur Packaging-Alias",
+      "reason": "Current effect library explicitly opens this destination; source bytes remain selected stock.",
+      "evidence": [
+        "hardware/xiaomi/vibrator/effect/effect.cpp:63-65",
+        "device/xiaomi/nezha/device.mk",
+        "bb3fadef81e3407456042b63a0c0cf06782cad5164daa099dde57b1ae491b758"
+      ]
+    },
+    {
+      "group": "device",
+      "expected_source": "odm/firmware/4_pop_P_RTP.bin",
+      "reference_destination": "vendor/etc/vibrator/primitive_effect_4.bin",
+      "reference_options": [],
+      "exists": true,
+      "applied": true,
+      "stock_soname": null,
+      "source_sha256": "bb3fadef81e3407456042b63a0c0cf06782cad5164daa099dde57b1ae491b758",
+      "status": "APPLIED_PACKAGING",
+      "resolved_build_options": [],
+      "unresolved_options": [],
+      "id": "OPT-026",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nur Packaging-Alias",
+      "reason": "Current effect library explicitly opens this destination; source bytes remain selected stock.",
+      "evidence": [
+        "hardware/xiaomi/vibrator/effect/effect.cpp:63-65",
+        "device/xiaomi/nezha/device.mk",
+        "bb3fadef81e3407456042b63a0c0cf06782cad5164daa099dde57b1ae491b758"
+      ]
+    },
+    {
+      "group": "device",
+      "expected_source": "odm/firmware/5_heavyClick_P_RTP.bin",
+      "reference_destination": "vendor/etc/vibrator/effect_5.bin",
+      "reference_options": [],
+      "exists": true,
+      "applied": true,
+      "stock_soname": null,
+      "source_sha256": "6ad4edd17dadd5292820250ff9acab4e1e5c795b1f49ad09144695408606533b",
+      "status": "APPLIED_PACKAGING",
+      "resolved_build_options": [],
+      "unresolved_options": [],
+      "id": "OPT-027",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nur Packaging-Alias",
+      "reason": "Current effect library explicitly opens this destination; source bytes remain selected stock.",
+      "evidence": [
+        "hardware/xiaomi/vibrator/effect/effect.cpp:63-65",
+        "device/xiaomi/nezha/device.mk",
+        "6ad4edd17dadd5292820250ff9acab4e1e5c795b1f49ad09144695408606533b"
+      ]
+    },
+    {
+      "group": "device",
+      "expected_source": "odm/firmware/5_heavyClick_P_RTP.bin",
+      "reference_destination": "vendor/etc/vibrator/primitive_effect_5.bin",
+      "reference_options": [],
+      "exists": true,
+      "applied": true,
+      "stock_soname": null,
+      "source_sha256": "6ad4edd17dadd5292820250ff9acab4e1e5c795b1f49ad09144695408606533b",
+      "status": "APPLIED_PACKAGING",
+      "resolved_build_options": [],
+      "unresolved_options": [],
+      "id": "OPT-028",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nur Packaging-Alias",
+      "reason": "Current effect library explicitly opens this destination; source bytes remain selected stock.",
+      "evidence": [
+        "hardware/xiaomi/vibrator/effect/effect.cpp:63-65",
+        "device/xiaomi/nezha/device.mk",
+        "6ad4edd17dadd5292820250ff9acab4e1e5c795b1f49ad09144695408606533b"
+      ]
+    },
+    {
+      "group": "device",
+      "expected_source": "odm/firmware/6_ringTone1_P_RTP.bin",
+      "reference_destination": "vendor/etc/vibrator/primitive_effect_6.bin",
+      "reference_options": [],
+      "exists": true,
+      "applied": true,
+      "stock_soname": null,
+      "source_sha256": "65eebb4c4271db63f7d528b7f92e246af8bfabcd72f6b22728fb9783a806c473",
+      "status": "APPLIED_PACKAGING",
+      "resolved_build_options": [],
+      "unresolved_options": [],
+      "id": "OPT-029",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nur Packaging-Alias",
+      "reason": "Current effect library explicitly opens this destination; source bytes remain selected stock.",
+      "evidence": [
+        "hardware/xiaomi/vibrator/effect/effect.cpp:63-65",
+        "device/xiaomi/nezha/device.mk",
+        "65eebb4c4271db63f7d528b7f92e246af8bfabcd72f6b22728fb9783a806c473"
+      ]
+    },
+    {
+      "group": "device",
+      "expected_source": "odm/firmware/7_ringTone2_P_RTP.bin",
+      "reference_destination": "vendor/etc/vibrator/primitive_effect_7.bin",
+      "reference_options": [],
+      "exists": true,
+      "applied": true,
+      "stock_soname": null,
+      "source_sha256": "461f7e42f835b025a82ae50d44689e372a2fd10744ad12720401800765d8491c",
+      "status": "APPLIED_PACKAGING",
+      "resolved_build_options": [],
+      "unresolved_options": [],
+      "id": "OPT-030",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nur Packaging-Alias",
+      "reason": "Current effect library explicitly opens this destination; source bytes remain selected stock.",
+      "evidence": [
+        "hardware/xiaomi/vibrator/effect/effect.cpp:63-65",
+        "device/xiaomi/nezha/device.mk",
+        "461f7e42f835b025a82ae50d44689e372a2fd10744ad12720401800765d8491c"
+      ]
+    },
+    {
+      "group": "device",
+      "expected_source": "odm/firmware/8_ringTone3_P_RTP.bin",
+      "reference_destination": "vendor/etc/vibrator/primitive_effect_8.bin",
+      "reference_options": [],
+      "exists": true,
+      "applied": true,
+      "stock_soname": null,
+      "source_sha256": "db0288d9d7b0048df2cd61d11a903500d9efb1052ace3fb37106d74cac8d50fa",
+      "status": "APPLIED_PACKAGING",
+      "resolved_build_options": [],
+      "unresolved_options": [],
+      "id": "OPT-031",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nur Packaging-Alias",
+      "reason": "Current effect library explicitly opens this destination; source bytes remain selected stock.",
+      "evidence": [
+        "hardware/xiaomi/vibrator/effect/effect.cpp:63-65",
+        "device/xiaomi/nezha/device.mk",
+        "db0288d9d7b0048df2cd61d11a903500d9efb1052ace3fb37106d74cac8d50fa"
+      ]
+    },
+    {
+      "group": "device",
+      "expected_source": "odm/firmware/9_ringTone4_P_RTP.bin",
+      "reference_destination": "vendor/etc/vibrator/primitive_effect_9.bin",
+      "reference_options": [],
+      "exists": true,
+      "applied": true,
+      "stock_soname": null,
+      "source_sha256": "cfb75467d49f259e8d2ae20dce2ba130c30c96c9312a2e31738d0ab656439458",
+      "status": "APPLIED_PACKAGING",
+      "resolved_build_options": [],
+      "unresolved_options": [],
+      "id": "OPT-032",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nur Packaging-Alias",
+      "reason": "Current effect library explicitly opens this destination; source bytes remain selected stock.",
+      "evidence": [
+        "hardware/xiaomi/vibrator/effect/effect.cpp:63-65",
+        "device/xiaomi/nezha/device.mk",
+        "cfb75467d49f259e8d2ae20dce2ba130c30c96c9312a2e31738d0ab656439458"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/hw/libaudiocorehal.default.so",
+      "reference_destination": "vendor/lib64/hw/libaudiocorehal.default.so",
+      "reference_options": [
+        "DISABLE_DEPS",
+        "REQUIRED=manifest_audiocorehal_default.xml"
+      ],
+      "exists": true,
+      "applied": true,
+      "stock_soname": "libaudiocorehal.default.so",
+      "source_sha256": "49591f274051afd8be5526c77b64a3aa25ac10d3048a3a96343a137e6c5989ea",
+      "status": "APPLIED_REQUIRED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_DEPS",
+        "REQUIRED=manifest_audiocorehal_default.xml"
+      ],
+      "id": "OPT-033",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "g\u00fcltige extract-utils Syntax",
+      "reason": "Matching JNI/broadcast strings confirmed in stock APK DEX, or missing default/effect audio V3 instances supplied by current source manifests. Dependency bypass flags were not imported.",
+      "evidence": [
+        "REQUIRED=manifest_audiocorehal_default.xml",
+        "Stock APK classes.dex string inspection",
+        "Selected VINTF inventory lacks default/r_submix/usb audio and effect declarations; source fragments provide V3"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/hw/libaudiocorehal.qti.so",
+      "reference_destination": "vendor/lib64/hw/libaudiocorehal.qti.so",
+      "reference_options": [
+        "DISABLE_DEPS"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "libaudiocorehal.qti.so",
+      "source_sha256": "132e9073c2c87f84f54c53cc9adc68f5285f867268364bad7fe0220d0e1563d4",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_DEPS"
+      ],
+      "id": "OPT-034",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/hw/libaudioeffecthal.qti.so",
+      "reference_destination": "vendor/lib64/hw/libaudioeffecthal.qti.so",
+      "reference_options": [
+        "DISABLE_DEPS",
+        "REQUIRED=audioeffectservice_qti.xml"
+      ],
+      "exists": true,
+      "applied": true,
+      "stock_soname": "libaudioeffecthal.qti.so",
+      "source_sha256": "a106d334a736ffef363492bfa2e489b736e1deaaaccc5bf3a93f956eb03d63eb",
+      "status": "APPLIED_REQUIRED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_DEPS",
+        "REQUIRED=audioeffectservice_qti.xml"
+      ],
+      "id": "OPT-035",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "g\u00fcltige extract-utils Syntax",
+      "reason": "Matching JNI/broadcast strings confirmed in stock APK DEX, or missing default/effect audio V3 instances supplied by current source manifests. Dependency bypass flags were not imported.",
+      "evidence": [
+        "REQUIRED=audioeffectservice_qti.xml",
+        "Stock APK classes.dex string inspection",
+        "Selected VINTF inventory lacks default/r_submix/usb audio and effect declarations; source fragments provide V3"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/libaudioplatformconverter.qti.so",
+      "reference_destination": "vendor/lib64/libaudioplatformconverter.qti.so",
+      "reference_options": [
+        "DISABLE_DEPS"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "libaudioplatformconverter.qti.so",
+      "source_sha256": "e816c70e9094842f6f1759a2a564373983aca0e96bdb48b6bb238cdcefae857f",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_DEPS"
+      ],
+      "id": "OPT-036",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/libaudioserviceexampleimpl.so",
+      "reference_destination": "vendor/lib64/libaudioserviceexampleimpl.so",
+      "reference_options": [
+        "DISABLE_DEPS"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "libaudioserviceexampleimpl.so",
+      "source_sha256": "6e878cd3c9133bc6249c8868b5a2f495f5bf4d4f79101c713d99118e8df17dfc",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_DEPS"
+      ],
+      "id": "OPT-037",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/libqtigefar.so",
+      "reference_destination": "vendor/lib64/libqtigefar.so",
+      "reference_options": [
+        "DISABLE_DEPS"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "libqtigefar.so",
+      "source_sha256": "4f6874f00007f8f5aee68df6ff3510c60a2a1aba47ce2c3efedf54837c418dd2",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_DEPS"
+      ],
+      "id": "OPT-038",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/libtensorflowlite_c.so",
+      "reference_destination": "vendor/lib64/libtensorflowlite_c_vendor.so",
+      "reference_options": [
+        "FIX_SONAME"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "libtensorflowlite_c.so",
+      "source_sha256": "f8f423e87936652c6ad93f034b5254bd0474d2717bf7cb7d3503942f7f8bd507",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "FIX_SONAME"
+      ],
+      "id": "OPT-039",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "Proposed destination rename is not selected; original stock SONAME already equals retained filename.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/soundfx/libdlbvolaidl.so",
+      "reference_destination": "vendor/lib64/soundfx/libdlbvolaidl.so",
+      "reference_options": [
+        "DISABLE_DEPS"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "libdlbvolaidl.so",
+      "source_sha256": "03901a13150fa3d564c09fe4a6608fff3a9d662ff88544efc7d4bc0fd4b0a1bd",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_DEPS"
+      ],
+      "id": "OPT-040",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/soundfx/libhwdapaidl.so",
+      "reference_destination": "vendor/lib64/soundfx/libhwdapaidl.so",
+      "reference_options": [
+        "DISABLE_DEPS"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "libhwdapaidl.so",
+      "source_sha256": "d776e00e368c97c6158dec21646eafa5d738d8e4d9b671279a1c06588d1f996f",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_DEPS"
+      ],
+      "id": "OPT-041",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/soundfx/liblvacfsprocessingaidl.so",
+      "reference_destination": "vendor/lib64/soundfx/liblvacfsprocessingaidl.so",
+      "reference_options": [
+        "DISABLE_DEPS"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "liblvacfsprocessingaidl.so",
+      "source_sha256": "b23efda4d0574112ae8219364dde464e3bd5f1ce00cf6d8209369b23d02cd4e9",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_DEPS"
+      ],
+      "id": "OPT-042",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/soundfx/libspatializer_aosp_aidl_sve.so",
+      "reference_destination": "vendor/lib64/soundfx/libspatializer_aosp_aidl_sve.so",
+      "reference_options": [
+        "DISABLE_DEPS"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "libspatializer_aosp_aidl_sve.so",
+      "source_sha256": "67f186c2ac5686aa543abcb54fe9ed0e94a943d25a01ccb7df16eab787996c90",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_DEPS"
+      ],
+      "id": "OPT-043",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/soundfx/libmiwndnsprocessingaidl.so",
+      "reference_destination": "vendor/lib64/soundfx/libmiwndnsprocessingaidl.so",
+      "reference_options": [
+        "DISABLE_DEPS"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "libmiwndnsprocessingaidl.so",
+      "source_sha256": "49a8b109b50164a09e72a6284b6cf0d91edbf63e76e307a85f2502d1035573fc",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_DEPS"
+      ],
+      "id": "OPT-044",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/soundfx/libqcompostprocbundle.so",
+      "reference_destination": "vendor/lib64/soundfx/libqcompostprocbundle.so",
+      "reference_options": [
+        "DISABLE_DEPS"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "libqcompostprocbundle.so",
+      "source_sha256": "fab7514a20d15d9a305a8a1d4789e7a0bd43db76d2328d6a5530597d2a4a7882",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_DEPS"
+      ],
+      "id": "OPT-045",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/soundfx/libqcomvisualizer.so",
+      "reference_destination": "vendor/lib64/soundfx/libqcomvisualizer.so",
+      "reference_options": [
+        "DISABLE_DEPS"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "libqcomvisualizer.so",
+      "source_sha256": "7b3ea14b1ab7e5e6a49314e6968a9c7077680b7d003df112cbc90dd8f2738e80",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_DEPS"
+      ],
+      "id": "OPT-046",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/soundfx/libqcomvoiceprocessing.so",
+      "reference_destination": "vendor/lib64/soundfx/libqcomvoiceprocessing.so",
+      "reference_options": [
+        "DISABLE_DEPS"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "libqcomvoiceprocessing.so",
+      "source_sha256": "3f109883a35330dd9a2cef0424055e72063b6d32da6d867142c0231651de7c5b",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_DEPS"
+      ],
+      "id": "OPT-047",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/soundfx/libquasar.so",
+      "reference_destination": "vendor/lib64/soundfx/libquasar.so",
+      "reference_options": [
+        "DISABLE_DEPS"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "libquasar.so",
+      "source_sha256": "12be3984046281b1faba4af1b9e79f05e6ba259223f80b0f5fe715432d3d86c9",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_DEPS"
+      ],
+      "id": "OPT-048",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/soundfx/libswgamedapaidl.so",
+      "reference_destination": "vendor/lib64/soundfx/libswgamedapaidl.so",
+      "reference_options": [
+        "DISABLE_DEPS"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "libswgamedapaidl.so",
+      "source_sha256": "026ec54805ce7ce18aab3fddf79863e3c1ffb7754bc868af155bfcb9f735108b",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_DEPS"
+      ],
+      "id": "OPT-049",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/soundfx/libswspatializeraidl.so",
+      "reference_destination": "vendor/lib64/soundfx/libswspatializeraidl.so",
+      "reference_options": [
+        "DISABLE_DEPS"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "libswspatializeraidl.so",
+      "source_sha256": "3e548b860be17116f7e7ee803e3e975c37435070d40f29fea079fd27d4103421",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_DEPS"
+      ],
+      "id": "OPT-050",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/soundfx/libvolumelistener.so",
+      "reference_destination": "vendor/lib64/soundfx/libvolumelistener.so",
+      "reference_options": [
+        "DISABLE_DEPS"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "libvolumelistener.so",
+      "source_sha256": "5f77bcfac04ce4a734e028735402e53b8dde2dbdfd0fa3915ac9eda105a9713b",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_DEPS"
+      ],
+      "id": "OPT-051",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/etc/init/android.hardware.bluetooth@aidl-service-qti-debug.rc",
+      "reference_destination": "vendor/etc/init/android.hardware.bluetooth@aidl-service-qti.rc",
+      "reference_options": [],
+      "exists": true,
+      "applied": false,
+      "stock_soname": null,
+      "source_sha256": "31bdbacbe1e1bc488e8330cde7387335ce5e87b76697f45ae7faa7e628c29918",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [],
+      "id": "OPT-052",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "Init loads .rc files from the directory; renaming the file does not change its service command. Original filename retained.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/hw/android.hardware.bluetooth.audio_sw.so",
+      "reference_destination": "vendor/lib64/hw/android.hardware.bluetooth.audio_sw.so",
+      "reference_options": [
+        "DISABLE_DEPS"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "android.hardware.bluetooth.audio_sw.so",
+      "source_sha256": "62e9a8094ccbbad5ec9e7e2300bbca0a01e8976eb2ed65a27b60fcafdeecd95e",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_DEPS"
+      ],
+      "id": "OPT-053",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/app/CneApp/CneApp.apk",
+      "reference_destination": "vendor/app/CneApp/CneApp.apk",
+      "reference_options": [
+        "REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink"
+      ],
+      "exists": true,
+      "applied": true,
+      "stock_soname": null,
+      "source_sha256": "44b5cc5ea74fea158bad2e655dd8bc217b4284829469e780d439dd11b55fee05",
+      "status": "APPLIED_REQUIRED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink"
+      ],
+      "id": "OPT-054",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "g\u00fcltige extract-utils Syntax",
+      "reason": "Matching JNI/broadcast strings confirmed in stock APK DEX, or missing default/effect audio V3 instances supplied by current source manifests. Dependency bypass flags were not imported.",
+      "evidence": [
+        "REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink",
+        "Stock APK classes.dex string inspection",
+        "Selected VINTF inventory lacks default/r_submix/usb audio and effect declarations; source fragments provide V3"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/vendor.qti.diaghal-V1-ndk.so",
+      "reference_destination": "vendor/lib64/vendor.qti.diaghal-V1-ndk.so",
+      "reference_options": [
+        "MODULE_SUFFIX=_vendor"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "vendor.qti.diaghal-V1-ndk.so",
+      "source_sha256": "262cce932597bd3ec38ef8f1078af8ec5e106f1e0878120c33cd9db5378c78ef",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "MODULE_SUFFIX=_vendor"
+      ],
+      "id": "OPT-055",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "Only vendor diaghal is currently selected, so this pair has no local duplicate. Reconsider when recovered system provider is selected.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/libhdr10plus.so",
+      "reference_destination": "vendor/lib64/libhdr10plus.so",
+      "reference_options": [
+        "DISABLE_CHECKELF"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "libhdr10plus.so",
+      "source_sha256": "2e13438dff7093030499f65f56eeb3357a21f3f45bf53ed955fc6aab426edbc1",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_CHECKELF"
+      ],
+      "id": "OPT-056",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/bin/hw/vendor.qti.hardware.display.composer-service",
+      "reference_destination": "vendor/bin/hw/vendor.qti.hardware.display.composer-service",
+      "reference_options": [
+        "DISABLE_DEPS"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": null,
+      "source_sha256": "87ed724229e3fe6fbb9b49ec1bda8c46d3ceedad38b0d839fcd58692f73523f6",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_DEPS"
+      ],
+      "id": "OPT-057",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "odm/lib64/hw/displayfeature.default.so",
+      "reference_destination": "odm/lib64/hw/displayfeature.default.so",
+      "reference_options": [
+        "DISABLE_CHECKELF"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "displayfeature.default.so",
+      "source_sha256": "12d120ab982b6364352b64c79289ae479de570c31d26788ac558282b91024dde",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_CHECKELF"
+      ],
+      "id": "OPT-058",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/libswspatializeraidl_ext.so",
+      "reference_destination": "vendor/lib64/libswspatializeraidl_ext.so",
+      "reference_options": [
+        "DISABLE_DEPS"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "libswspatializeraidl_ext.so",
+      "source_sha256": "a43e64605ba32b26f1fe608401b399301bdfd3acf1273f10f338309cf6f06786",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_DEPS"
+      ],
+      "id": "OPT-059",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "system_ext/priv-app/ims/ims.apk",
+      "reference_destination": "system_ext/priv-app/ims/ims.apk",
+      "reference_options": [
+        "REQUIRED=QtiTelephonyCompat"
+      ],
+      "exists": true,
+      "applied": true,
+      "stock_soname": null,
+      "source_sha256": "56f103215b1aa301e65b6ecde29bb67318cba07f3f3d91d2196372fd14d44172",
+      "status": "APPLIED_REQUIRED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "REQUIRED=QtiTelephonyCompat"
+      ],
+      "id": "OPT-060",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "g\u00fcltige extract-utils Syntax",
+      "reason": "Matching JNI/broadcast strings confirmed in stock APK DEX, or missing default/effect audio V3 instances supplied by current source manifests. Dependency bypass flags were not imported.",
+      "evidence": [
+        "REQUIRED=QtiTelephonyCompat",
+        "Stock APK classes.dex string inspection",
+        "Selected VINTF inventory lacks default/r_submix/usb audio and effect declarations; source fragments provide V3"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/libqc2audio_hwaudiocodec.so",
+      "reference_destination": "vendor/lib64/libqc2audio_hwaudiocodec.so",
+      "reference_options": [
+        "DISABLE_CHECKELF"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "libqc2audio_hwaudiocodec.so",
+      "source_sha256": "247607902a81ab7512d6d6f958b2be750a916254ad6e85f16ba734fcf7bcd6e6",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_CHECKELF"
+      ],
+      "id": "OPT-061",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/libqcodec2_psfilter.so",
+      "reference_destination": "vendor/lib64/libqcodec2_psfilter.so",
+      "reference_options": [
+        "DISABLE_CHECKELF"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "libqcodec2_psfilter.so",
+      "source_sha256": "6a78c48259b6f8f41872789cf1a98e18ed4c6a10ec288752f9880dfd6d004bc1",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_CHECKELF"
+      ],
+      "id": "OPT-062",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/libqcodec2_rffilter.so",
+      "reference_destination": "vendor/lib64/libqcodec2_rffilter.so",
+      "reference_options": [
+        "DISABLE_CHECKELF"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "libqcodec2_rffilter.so",
+      "source_sha256": "45d7ebe032be694b120bff0356c29902fdb9cd602254b35eb19409ae2f33032e",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_CHECKELF"
+      ],
+      "id": "OPT-063",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/libqcodec2_srfilter.so",
+      "reference_destination": "vendor/lib64/libqcodec2_srfilter.so",
+      "reference_options": [
+        "DISABLE_CHECKELF"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "libqcodec2_srfilter.so",
+      "source_sha256": "7ec8c7e6b6f7c094cf1ba261f3550235876763c1949c0fcf7ce8bc5f9d86e5b3",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_CHECKELF"
+      ],
+      "id": "OPT-064",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "odm/etc/libnfc-nci.conf",
+      "reference_destination": "vendor/etc/libnfc-nci.conf",
+      "reference_options": [],
+      "exists": true,
+      "applied": false,
+      "stock_soname": null,
+      "source_sha256": "66e2527d12f7ade91a38c0bf89cfe2fbdfc8e740f54b1f00eab71bfec977da3c",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [],
+      "id": "OPT-065",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "NFC loader searches /odm/etc before /vendor/etc; retain original stock path.",
+      "evidence": [
+        "packages/modules/Nfc/libnfc-nci/src/adaptation/nfc_config.cc:39-70"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "system_ext/priv-app/QtiTelephony/QtiTelephony.apk",
+      "reference_destination": "system_ext/priv-app/QtiTelephony/QtiTelephony.apk",
+      "reference_options": [
+        "REQUIRED=QtiTelephonyCompat"
+      ],
+      "exists": true,
+      "applied": true,
+      "stock_soname": null,
+      "source_sha256": "58906a6e238b0ea95cd26039ebf3ffa81414505a0c39e761b1a045d700650d9d",
+      "status": "APPLIED_REQUIRED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "REQUIRED=QtiTelephonyCompat"
+      ],
+      "id": "OPT-066",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "g\u00fcltige extract-utils Syntax",
+      "reason": "Matching JNI/broadcast strings confirmed in stock APK DEX, or missing default/effect audio V3 instances supplied by current source manifests. Dependency bypass flags were not imported.",
+      "evidence": [
+        "REQUIRED=QtiTelephonyCompat",
+        "Stock APK classes.dex string inspection",
+        "Selected VINTF inventory lacks default/r_submix/usb audio and effect declarations; source fragments provide V3"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/libqms_xiaomi.so",
+      "reference_destination": "vendor/lib64/libqms_xiaomi.so",
+      "reference_options": [
+        "FIX_SONAME"
+      ],
+      "exists": true,
+      "applied": true,
+      "stock_soname": "libqms_client.so",
+      "source_sha256": "019219542f59b6b549b7c3fb957f1b8065db1c4b1545cd919aea10506b5d905e",
+      "status": "APPLIED_SONAME",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "FIX_SONAME"
+      ],
+      "id": "OPT-067",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "Fixup-Option erforderlich",
+      "reason": "ELF check requires installed basename as DT_SONAME; original mismatch verified and only metadata normalized.",
+      "evidence": [
+        "libqms_client.so",
+        "libqms_xiaomi.so",
+        "build/make/tools/check_elf_file.py:check_dt_soname"
+      ],
+      "original_sha256": "019219542f59b6b549b7c3fb957f1b8065db1c4b1545cd919aea10506b5d905e",
+      "output_sha256": "d103e26c7490febe31c4f4a8c8d6b8fe2bccf40d11b8f94b0448bcfe4e3663bd",
+      "result_soname": "libqms_xiaomi.so"
+    },
+    {
+      "group": "common",
+      "expected_source": "odm/etc/ueventd.rc",
+      "reference_destination": "odm/etc/ueventd.rc",
+      "reference_options": [
+        "MODULE=ueventd-odm.rc"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": null,
+      "source_sha256": "c747aeaa6ecc9274fd0961354dddbaad5f49992ab1f129235bbcd5c748f58daa",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "MODULE=ueventd-odm.rc"
+      ],
+      "id": "OPT-068",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "Current generated modules pass duplicate-name scan without this reference override; original odm/etc/ueventd.rc path retained.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    },
+    {
+      "group": "common",
+      "expected_source": "vendor/lib64/libwfdmmsrc_proprietary.so",
+      "reference_destination": "vendor/lib64/libwfdmmsrc_proprietary.so",
+      "reference_options": [
+        "DISABLE_DEPS"
+      ],
+      "exists": true,
+      "applied": false,
+      "stock_soname": "libwfdmmsrc_proprietary.so",
+      "source_sha256": "0e9fd2694c9eae72e724c1c1046f02bc0121ca865dfe9290200842429660516a",
+      "status": "CLASSIFIED_NOT_IMPORTED",
+      "resolved_build_options": [],
+      "unresolved_options": [
+        "DISABLE_DEPS"
+      ],
+      "id": "OPT-069",
+      "syntax": "VALID_EXTRACT_UTILS",
+      "classification": "nicht ben\u00f6tigt",
+      "reason": "These options suppress checks/dependencies; they do not repair a demonstrated ABI failure. Preserve validation and record actual unresolved providers separately.",
+      "evidence": [
+        "tools/extract-utils/extract_utils/file.py"
+      ]
+    }
+  ]
+}

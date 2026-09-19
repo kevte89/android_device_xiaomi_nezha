@@ -1,0 +1,29 @@
+geometry	65536	3	4096
+device	super	15300820992	1048576
+group	default	0
+group	qti_dynamic_partitions_a	15290335232
+group	qti_dynamic_partitions_b	15290335232
+partition	odm_a	4767621120	1
+extent	odm_a	9311760	0	2048	0
+partition	odm_b	0	2
+partition	product_a	4942934016	1
+extent	product_a	9654168	0	9314304	0
+partition	product_b	0	2
+partition	system_a	912273408	1
+extent	system_a	1781784	0	18968576	0
+partition	system_b	0	2
+partition	system_dlkm_a	16912384	1
+extent	system_dlkm_a	33032	0	20752384	0
+partition	system_dlkm_b	0	2
+partition	system_ext_a	713158656	1
+extent	system_ext_a	1392888	0	20787200	0
+partition	system_ext_b	0	2
+partition	vendor_a	959709184	1
+extent	vendor_a	1874432	0	22181888	0
+partition	vendor_b	0	2
+partition	vendor_dlkm_a	54132736	1
+extent	vendor_dlkm_a	105728	0	24057856	0
+partition	vendor_dlkm_b	0	2
+partition	mi_ext_a	111198208	1
+extent	mi_ext_a	217184	0	24164352	0
+partition	mi_ext_b	0	2

@@ -1,0 +1,38 @@
+{
+  "inventory_entries": 12509,
+  "inventory_by_partition": {
+    "vendor": 3689,
+    "odm": 2935,
+    "product": 1989,
+    "system_ext": 3276,
+    "vendor_dlkm": 392,
+    "system_dlkm": 228
+  },
+  "selected_device_blobs": 1374,
+  "selected_common_blobs": 1722,
+  "selected_bytes": 4727551941,
+  "reference_entries": {
+    "device": 1588,
+    "common": 1739
+  },
+  "missing_expected_entries": {
+    "device": 205,
+    "common": 15
+  },
+  "missing_unique_paths": 220,
+  "missing_unique_by_group": {
+    "device": 205,
+    "common": 15
+  },
+  "selected_from_verified_replacements": 0,
+  "stock_paths_outside_reference_union": 9413,
+  "fixup_operations_audited": 146,
+  "fixup_operations_pending": 124,
+  "fixup_blobs_pending": 98,
+  "reference_options_or_aliases_audited": 116,
+  "reference_options_or_aliases_pending": 69,
+  "applied_binary_fixups": 0,
+  "verified_stock_symlinks": 9,
+  "verified_sql_filegroup_members": 28,
+  "resolved_module_name_collisions": 3
+}

@@ -1,0 +1,305 @@
+
+device/xiaomi/nezha-kernel/vendor_dlkm/adsp_sleepmon.ko:	file format elf64-littleaarch64
+
+Disassembly of section .text:
+
+000000000000186c <adspsleepmon_device_ioctl>:
+    186c: d503233f     	paciasp
+    1870: d10143ff     	sub	sp, sp, #0x50
+    1874: a9027bfd     	stp	x29, x30, [sp, #0x20]
+    1878: a90357f6     	stp	x22, x21, [sp, #0x30]
+    187c: a9044ff4     	stp	x20, x19, [sp, #0x40]
+    1880: 910083fd     	add	x29, sp, #0x20
+    1884: d5384108     	mrs	x8, SP_EL0
+    1888: 528a4049     	mov	w9, #0x5202             // =20994
+    188c: f9438908     	ldr	x8, [x8, #0x710]
+    1890: 72b80109     	movk	w9, #0xc008, lsl #16
+    1894: 6b09003f     	cmp	w1, w9
+    1898: f81f83a8     	stur	x8, [x29, #-0x8]
+    189c: 54000481     	b.ne	0x192c <adspsleepmon_device_ioctl+0xc0>
+    18a0: 910003e0     	mov	x0, sp
+    18a4: aa0203e1     	mov	x1, x2
+    18a8: 52800102     	mov	w2, #0x8                // =8
+    18ac: f90003ff     	str	xzr, [sp]
+    18b0: 940001c8     	bl	0x1fd0 <_inline_copy_from_user>
+    18b4: b5000880     	cbnz	x0, 0x19c4 <adspsleepmon_device_ioctl+0x158>
+    18b8: b94003e8     	ldr	w8, [sp]
+    18bc: 340009c8     	cbz	w8, 0x19f4 <adspsleepmon_device_ioctl+0x188>
+    18c0: b94007e1     	ldr	w1, [sp, #0x4]
+    18c4: 71001c3f     	cmp	w1, #0x7
+    18c8: 54000a22     	b.hs	0x1a0c <adspsleepmon_device_ioctl+0x1a0>
+    18cc: 71000c3f     	cmp	w1, #0x3
+    18d0: aa1f03f3     	mov	x19, xzr
+    18d4: 5400016c     	b.gt	0x1900 <adspsleepmon_device_ioctl+0x94>
+    18d8: 7100043f     	cmp	w1, #0x1
+    18dc: 540004e0     	b.eq	0x1978 <adspsleepmon_device_ioctl+0x10c>
+    18e0: 7100083f     	cmp	w1, #0x2
+    18e4: 540005e0     	b.eq	0x19a0 <adspsleepmon_device_ioctl+0x134>
+    18e8: 71000c3f     	cmp	w1, #0x3
+    18ec: 540009e1     	b.ne	0x1a28 <adspsleepmon_device_ioctl+0x1bc>
+    18f0: aa1f03f3     	mov	x19, xzr
+    18f4: 90000008     	adrp	x8, 0x1000 <adspsleepmon_worker+0x380>
+    18f8: 91000108     	add	x8, x8, #0x0
+    18fc: 14000026     	b	0x1994 <adspsleepmon_device_ioctl+0x128>
+    1900: 7100103f     	cmp	w1, #0x4
+    1904: 54000420     	b.eq	0x1988 <adspsleepmon_device_ioctl+0x11c>
+    1908: 7100143f     	cmp	w1, #0x5
+    190c: 54000520     	b.eq	0x19b0 <adspsleepmon_device_ioctl+0x144>
+    1910: 7100183f     	cmp	w1, #0x6
+    1914: 540008a1     	b.ne	0x1a28 <adspsleepmon_device_ioctl+0x1bc>
+    1918: 90000008     	adrp	x8, 0x1000 <adspsleepmon_worker+0x380>
+    191c: 52800029     	mov	w9, #0x1                // =1
+    1920: aa1f03f3     	mov	x19, xzr
+    1924: 39000109     	strb	w9, [x8]
+    1928: 14000040     	b	0x1a28 <adspsleepmon_device_ioctl+0x1bc>
+    192c: 528a4028     	mov	w8, #0x5201             // =20993
+    1930: 72b80288     	movk	w8, #0xc014, lsl #16
+    1934: 6b08003f     	cmp	w1, w8
+    1938: 54000521     	b.ne	0x19dc <adspsleepmon_device_ioctl+0x170>
+    193c: f9401016     	ldr	x22, [x0, #0x20]
+    1940: 910003e0     	mov	x0, sp
+    1944: aa0203e1     	mov	x1, x2
+    1948: 52800282     	mov	w2, #0x14               // =20
+    194c: b90013ff     	str	wzr, [sp, #0x10]
+    1950: a9007fff     	stp	xzr, xzr, [sp]
+    1954: 9400019f     	bl	0x1fd0 <_inline_copy_from_user>
+    1958: b5000360     	cbnz	x0, 0x19c4 <adspsleepmon_device_ioctl+0x158>
+    195c: b50007f6     	cbnz	x22, 0x1a58 <adspsleepmon_device_ioctl+0x1ec>
+    1960: 90000000     	adrp	x0, 0x1000 <adspsleepmon_worker+0x380>
+    1964: 91000000     	add	x0, x0, #0x0
+    1968: 94000000     	bl	0x1968 <adspsleepmon_device_ioctl+0xfc>
+    196c: d2dffe93     	mov	x19, #0xfff400000000    // =281423437103104
+    1970: f2fffff3     	movk	x19, #0xffff, lsl #48
+    1974: 1400002d     	b	0x1a28 <adspsleepmon_device_ioctl+0x1bc>
+    1978: 90000008     	adrp	x8, 0x1000 <adspsleepmon_worker+0x380>
+    197c: aa1f03f3     	mov	x19, xzr
+    1980: 3900011f     	strb	wzr, [x8]
+    1984: 14000029     	b	0x1a28 <adspsleepmon_device_ioctl+0x1bc>
+    1988: aa1f03f3     	mov	x19, xzr
+    198c: 90000008     	adrp	x8, 0x1000 <adspsleepmon_worker+0x380>
+    1990: 91000108     	add	x8, x8, #0x0
+    1994: 39400909     	ldrb	w9, [x8, #0x2]
+    1998: 39000109     	strb	w9, [x8]
+    199c: 14000023     	b	0x1a28 <adspsleepmon_device_ioctl+0x1bc>
+    19a0: 90000008     	adrp	x8, 0x1000 <adspsleepmon_worker+0x380>
+    19a4: aa1f03f3     	mov	x19, xzr
+    19a8: 3900011f     	strb	wzr, [x8]
+    19ac: 1400001f     	b	0x1a28 <adspsleepmon_device_ioctl+0x1bc>
+    19b0: 90000008     	adrp	x8, 0x1000 <adspsleepmon_worker+0x380>
+    19b4: 52800029     	mov	w9, #0x1                // =1
+    19b8: aa1f03f3     	mov	x19, xzr
+    19bc: 39000109     	strb	w9, [x8]
+    19c0: 1400001a     	b	0x1a28 <adspsleepmon_device_ioctl+0x1bc>
+    19c4: d2dffcf3     	mov	x19, #0xffe700000000    // =281367602528256
+    19c8: 90000000     	adrp	x0, 0x1000 <adspsleepmon_worker+0x380>
+    19cc: 91000000     	add	x0, x0, #0x0
+    19d0: f2fffff3     	movk	x19, #0xffff, lsl #48
+    19d4: 94000000     	bl	0x19d4 <adspsleepmon_device_ioctl+0x168>
+    19d8: 14000014     	b	0x1a28 <adspsleepmon_device_ioctl+0x1bc>
+    19dc: d2dffcf3     	mov	x19, #0xffe700000000    // =281367602528256
+    19e0: 90000000     	adrp	x0, 0x1000 <adspsleepmon_worker+0x380>
+    19e4: 91000000     	add	x0, x0, #0x0
+    19e8: f2fffff3     	movk	x19, #0xffff, lsl #48
+    19ec: 94000000     	bl	0x19ec <adspsleepmon_device_ioctl+0x180>
+    19f0: 1400000e     	b	0x1a28 <adspsleepmon_device_ioctl+0x1bc>
+    19f4: d2dffcf3     	mov	x19, #0xffe700000000    // =281367602528256
+    19f8: 90000000     	adrp	x0, 0x1000 <adspsleepmon_worker+0x380>
+    19fc: 91000000     	add	x0, x0, #0x0
+    1a00: f2fffff3     	movk	x19, #0xffff, lsl #48
+    1a04: 2a1f03e1     	mov	w1, wzr
+    1a08: 14000005     	b	0x1a1c <adspsleepmon_device_ioctl+0x1b0>
+    1a0c: d2dffd53     	mov	x19, #0xffea00000000    // =281380487430144
+    1a10: 90000000     	adrp	x0, 0x1000 <adspsleepmon_worker+0x380>
+    1a14: 91000000     	add	x0, x0, #0x0
+    1a18: f2fffff3     	movk	x19, #0xffff, lsl #48
+    1a1c: 528a4042     	mov	w2, #0x5202             // =20994
+    1a20: 72b80102     	movk	w2, #0xc008, lsl #16
+    1a24: 94000000     	bl	0x1a24 <adspsleepmon_device_ioctl+0x1b8>
+    1a28: d5384108     	mrs	x8, SP_EL0
+    1a2c: f9438908     	ldr	x8, [x8, #0x710]
+    1a30: f85f83a9     	ldur	x9, [x29, #-0x8]
+    1a34: eb09011f     	cmp	x8, x9
+    1a38: 540016e1     	b.ne	0x1d14 <adspsleepmon_device_ioctl+0x4a8>
+    1a3c: 9360fe60     	asr	x0, x19, #32
+    1a40: a9444ff4     	ldp	x20, x19, [sp, #0x40]
+    1a44: a94357f6     	ldp	x22, x21, [sp, #0x30]
+    1a48: a9427bfd     	ldp	x29, x30, [sp, #0x20]
+    1a4c: 910143ff     	add	sp, sp, #0x50
+    1a50: d50323bf     	autiasp
+    1a54: d65f03c0     	ret
+    1a58: b94016c2     	ldr	w2, [x22, #0x14]
+    1a5c: 7100085f     	cmp	w2, #0x2
+    1a60: 54000122     	b.hs	0x1a84 <adspsleepmon_device_ioctl+0x218>
+    1a64: b94003e8     	ldr	w8, [sp]
+    1a68: 350001e8     	cbnz	w8, 0x1aa4 <adspsleepmon_device_ioctl+0x238>
+    1a6c: d2dffcf3     	mov	x19, #0xffe700000000    // =281367602528256
+    1a70: 90000000     	adrp	x0, 0x1000 <adspsleepmon_worker+0x380>
+    1a74: 91000000     	add	x0, x0, #0x0
+    1a78: f2fffff3     	movk	x19, #0xffff, lsl #48
+    1a7c: 2a1f03e1     	mov	w1, wzr
+    1a80: 14000010     	b	0x1ac0 <adspsleepmon_device_ioctl+0x254>
+    1a84: 528a4021     	mov	w1, #0x5201             // =20993
+    1a88: 90000000     	adrp	x0, 0x1000 <adspsleepmon_worker+0x380>
+    1a8c: 91000000     	add	x0, x0, #0x0
+    1a90: 72b80281     	movk	w1, #0xc014, lsl #16
+    1a94: 94000000     	bl	0x1a94 <adspsleepmon_device_ioctl+0x228>
+    1a98: d2dffad3     	mov	x19, #0xffd600000000    // =281294588084224
+    1a9c: f2fffff3     	movk	x19, #0xffff, lsl #48
+    1aa0: 17ffffe2     	b	0x1a28 <adspsleepmon_device_ioctl+0x1bc>
+    1aa4: b94007e1     	ldr	w1, [sp, #0x4]
+    1aa8: 7100183f     	cmp	w1, #0x6
+    1aac: 54000103     	b.lo	0x1acc <adspsleepmon_device_ioctl+0x260>
+    1ab0: d2dffd53     	mov	x19, #0xffea00000000    // =281380487430144
+    1ab4: 90000000     	adrp	x0, 0x1000 <adspsleepmon_worker+0x380>
+    1ab8: 91000000     	add	x0, x0, #0x0
+    1abc: f2fffff3     	movk	x19, #0xffff, lsl #48
+    1ac0: 528a4022     	mov	w2, #0x5201             // =20993
+    1ac4: 72b80282     	movk	w2, #0xc014, lsl #16
+    1ac8: 17ffffd7     	b	0x1a24 <adspsleepmon_device_ioctl+0x1b8>
+    1acc: 90000013     	adrp	x19, 0x1000 <adspsleepmon_worker+0x380>
+    1ad0: 91000273     	add	x19, x19, #0x0
+    1ad4: aa1303e0     	mov	x0, x19
+    1ad8: 94000000     	bl	0x1ad8 <adspsleepmon_device_ioctl+0x26c>
+    1adc: b94016c8     	ldr	w8, [x22, #0x14]
+    1ae0: 90000014     	adrp	x20, 0x1000 <adspsleepmon_worker+0x380>
+    1ae4: 35000168     	cbnz	w8, 0x1b10 <adspsleepmon_device_ioctl+0x2a4>
+    1ae8: f9400288     	ldr	x8, [x20]
+    1aec: f90002c8     	str	x8, [x22]
+    1af0: b4000048     	cbz	x8, 0x1af8 <adspsleepmon_device_ioctl+0x28c>
+    1af4: f9000516     	str	x22, [x8, #0x8]
+    1af8: 90000008     	adrp	x8, 0x1000 <adspsleepmon_worker+0x380>
+    1afc: 91000108     	add	x8, x8, #0x0
+    1b00: f9000116     	str	x22, [x8]
+    1b04: f90006c8     	str	x8, [x22, #0x8]
+    1b08: 52800028     	mov	w8, #0x1                // =1
+    1b0c: b90016c8     	str	w8, [x22, #0x14]
+    1b10: b94007e8     	ldr	w8, [sp, #0x4]
+    1b14: 7100091f     	cmp	w8, #0x2
+    1b18: 5400016d     	b.le	0x1b44 <adspsleepmon_device_ioctl+0x2d8>
+    1b1c: 7100151f     	cmp	w8, #0x5
+    1b20: 54000220     	b.eq	0x1b64 <adspsleepmon_device_ioctl+0x2f8>
+    1b24: 7100111f     	cmp	w8, #0x4
+    1b28: 54000220     	b.eq	0x1b6c <adspsleepmon_device_ioctl+0x300>
+    1b2c: 71000d1f     	cmp	w8, #0x3
+    1b30: 540003e1     	b.ne	0x1bac <adspsleepmon_device_ioctl+0x340>
+    1b34: b9401ec8     	ldr	w8, [x22, #0x1c]
+    1b38: 11000508     	add	w8, w8, #0x1
+    1b3c: b9001ec8     	str	w8, [x22, #0x1c]
+    1b40: 14000006     	b	0x1b58 <adspsleepmon_device_ioctl+0x2ec>
+    1b44: 7100051f     	cmp	w8, #0x1
+    1b48: 54000080     	b.eq	0x1b58 <adspsleepmon_device_ioctl+0x2ec>
+    1b4c: 7100091f     	cmp	w8, #0x2
+    1b50: 540001e0     	b.eq	0x1b8c <adspsleepmon_device_ioctl+0x320>
+    1b54: 14000016     	b	0x1bac <adspsleepmon_device_ioctl+0x340>
+    1b58: b9401ac8     	ldr	w8, [x22, #0x18]
+    1b5c: 11000508     	add	w8, w8, #0x1
+    1b60: 14000012     	b	0x1ba8 <adspsleepmon_device_ioctl+0x33c>
+    1b64: f9000edf     	str	xzr, [x22, #0x18]
+    1b68: 14000011     	b	0x1bac <adspsleepmon_device_ioctl+0x340>
+    1b6c: b9401ec8     	ldr	w8, [x22, #0x1c]
+    1b70: 350000a8     	cbnz	w8, 0x1b84 <adspsleepmon_device_ioctl+0x318>
+    1b74: 90000000     	adrp	x0, 0x1000 <adspsleepmon_worker+0x380>
+    1b78: 91000000     	add	x0, x0, #0x0
+    1b7c: 94000000     	bl	0x1b7c <adspsleepmon_device_ioctl+0x310>
+    1b80: 14000003     	b	0x1b8c <adspsleepmon_device_ioctl+0x320>
+    1b84: 51000508     	sub	w8, w8, #0x1
+    1b88: b9001ec8     	str	w8, [x22, #0x1c]
+    1b8c: b9401ac8     	ldr	w8, [x22, #0x18]
+    1b90: 350000a8     	cbnz	w8, 0x1ba4 <adspsleepmon_device_ioctl+0x338>
+    1b94: 90000000     	adrp	x0, 0x1000 <adspsleepmon_worker+0x380>
+    1b98: 91000000     	add	x0, x0, #0x0
+    1b9c: 94000000     	bl	0x1b9c <adspsleepmon_device_ioctl+0x330>
+    1ba0: 14000003     	b	0x1bac <adspsleepmon_device_ioctl+0x340>
+    1ba4: 51000508     	sub	w8, w8, #0x1
+    1ba8: b9001ac8     	str	w8, [x22, #0x18]
+    1bac: 910042c0     	add	x0, x22, #0x10
+    1bb0: 94000000     	bl	0x1bb0 <adspsleepmon_device_ioctl+0x344>
+    1bb4: f9400288     	ldr	x8, [x20]
+    1bb8: b50004c8     	cbnz	x8, 0x1c50 <adspsleepmon_device_ioctl+0x3e4>
+    1bbc: 2a1f03f4     	mov	w20, wzr
+    1bc0: 2a1f03f5     	mov	w21, wzr
+    1bc4: 910042c0     	add	x0, x22, #0x10
+    1bc8: 94000000     	bl	0x1bc8 <adspsleepmon_device_ioctl+0x35c>
+    1bcc: 34000235     	cbz	w21, 0x1c10 <adspsleepmon_device_ioctl+0x3a4>
+    1bd0: 6b1402bf     	cmp	w21, w20
+    1bd4: 540001e0     	b.eq	0x1c10 <adspsleepmon_device_ioctl+0x3a4>
+    1bd8: 90000008     	adrp	x8, 0x1000 <adspsleepmon_worker+0x380>
+    1bdc: 39400103     	ldrb	w3, [x8]
+    1be0: 7100047f     	cmp	w3, #0x1
+    1be4: 54000841     	b.ne	0x1cec <adspsleepmon_device_ioctl+0x480>
+    1be8: 90000000     	adrp	x0, 0x1000 <adspsleepmon_worker+0x380>
+    1bec: 91000000     	add	x0, x0, #0x0
+    1bf0: 94000000     	bl	0x1bf0 <adspsleepmon_device_ioctl+0x384>
+    1bf4: 2a1f03e3     	mov	w3, wzr
+    1bf8: 90000008     	adrp	x8, 0x1000 <adspsleepmon_worker+0x380>
+    1bfc: 91000108     	add	x8, x8, #0x0
+    1c00: 3900011f     	strb	wzr, [x8]
+    1c04: f802611f     	stur	xzr, [x8, #0x26]
+    1c08: b801e11f     	stur	wzr, [x8, #0x1e]
+    1c0c: 14000038     	b	0x1cec <adspsleepmon_device_ioctl+0x480>
+    1c10: 35000375     	cbnz	w21, 0x1c7c <adspsleepmon_device_ioctl+0x410>
+    1c14: 90000009     	adrp	x9, 0x1000 <adspsleepmon_worker+0x380>
+    1c18: 91000129     	add	x9, x9, #0x0
+    1c1c: f940c528     	ldr	x8, [x9, #0x188]
+    1c20: a941290b     	ldp	x11, x10, [x8, #0x10]
+    1c24: a9403108     	ldp	x8, x12, [x8]
+    1c28: a914a92b     	stp	x11, x10, [x9, #0x148]
+    1c2c: a913b128     	stp	x8, x12, [x9, #0x138]
+    1c30: d5033fdf     	isb
+    1c34: d53be04a     	mrs	x10, CNTVCT_EL0
+    1c38: ca0a0148     	eor	x8, x10, x10
+    1c3c: 8b2863e8     	add	x8, sp, x8
+    1c40: f940011f     	ldr	xzr, [x8]
+    1c44: b9400128     	ldr	w8, [x9]
+    1c48: f900ad2a     	str	x10, [x9, #0x158]
+    1c4c: 1400001d     	b	0x1cc0 <adspsleepmon_device_ioctl+0x454>
+    1c50: 2a1f03f5     	mov	w21, wzr
+    1c54: 2a1f03f4     	mov	w20, wzr
+    1c58: 14000003     	b	0x1c64 <adspsleepmon_device_ioctl+0x3f8>
+    1c5c: f9400108     	ldr	x8, [x8]
+    1c60: b4fffb28     	cbz	x8, 0x1bc4 <adspsleepmon_device_ioctl+0x358>
+    1c64: b9401509     	ldr	w9, [x8, #0x14]
+    1c68: 34ffffa9     	cbz	w9, 0x1c5c <adspsleepmon_device_ioctl+0x3f0>
+    1c6c: 29432909     	ldp	w9, w10, [x8, #0x18]
+    1c70: 0b150135     	add	w21, w9, w21
+    1c74: 0b140154     	add	w20, w10, w20
+    1c78: 17fffff9     	b	0x1c5c <adspsleepmon_device_ioctl+0x3f0>
+    1c7c: 90000009     	adrp	x9, 0x1000 <adspsleepmon_worker+0x380>
+    1c80: 91000129     	add	x9, x9, #0x0
+    1c84: d1005128     	sub	x8, x9, #0x14
+    1c88: f940d10a     	ldr	x10, [x8, #0x1a0]
+    1c8c: a9412d4c     	ldp	x12, x11, [x10, #0x10]
+    1c90: a940354a     	ldp	x10, x13, [x10]
+    1c94: a9182d0c     	stp	x12, x11, [x8, #0x180]
+    1c98: a917350a     	stp	x10, x13, [x8, #0x170]
+    1c9c: d5033fdf     	isb
+    1ca0: d53be04a     	mrs	x10, CNTVCT_EL0
+    1ca4: ca0a014b     	eor	x11, x10, x10
+    1ca8: 8b2b63eb     	add	x11, sp, x11
+    1cac: f940017f     	ldr	xzr, [x11]
+    1cb0: f900c90a     	str	x10, [x8, #0x190]
+    1cb4: b9400128     	ldr	w8, [x9]
+    1cb8: f801413f     	stur	xzr, [x9, #0x14]
+    1cbc: b9000d3f     	str	wzr, [x9, #0xc]
+    1cc0: 52801f49     	mov	w9, #0xfa               // =250
+    1cc4: 9000000a     	adrp	x10, 0x1000 <adspsleepmon_worker+0x380>
+    1cc8: 90000000     	adrp	x0, 0x1000 <adspsleepmon_worker+0x380>
+    1ccc: 91000000     	add	x0, x0, #0x0
+    1cd0: 1b097d08     	mul	w8, w8, w9
+    1cd4: f9400149     	ldr	x9, [x10]
+    1cd8: 8b080121     	add	x1, x9, x8
+    1cdc: 94000000     	bl	0x1cdc <adspsleepmon_device_ioctl+0x470>
+    1ce0: 90000008     	adrp	x8, 0x1000 <adspsleepmon_worker+0x380>
+    1ce4: 52800023     	mov	w3, #0x1                // =1
+    1ce8: 39000103     	strb	w3, [x8]
+    1cec: 90000000     	adrp	x0, 0x1000 <adspsleepmon_worker+0x380>
+    1cf0: 91000000     	add	x0, x0, #0x0
+    1cf4: 2a1503e1     	mov	w1, w21
+    1cf8: 2a1403e2     	mov	w2, w20
+    1cfc: 291b5275     	stp	w21, w20, [x19, #0xd8]
+    1d00: 94000000     	bl	0x1d00 <adspsleepmon_device_ioctl+0x494>
+    1d04: aa1303e0     	mov	x0, x19
+    1d08: 94000000     	bl	0x1d08 <adspsleepmon_device_ioctl+0x49c>
+    1d0c: aa1f03f3     	mov	x19, xzr
+    1d10: 17ffff46     	b	0x1a28 <adspsleepmon_device_ioctl+0x1bc>
+    1d14: 94000000     	bl	0x1d14 <adspsleepmon_device_ioctl+0x4a8>

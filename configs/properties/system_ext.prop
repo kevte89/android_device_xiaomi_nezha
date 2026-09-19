@@ -1,0 +1,11 @@
+# Copyright (C) 2026 The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+
+# Only values explicitly present in this partition of Nezha-309 stock.
+bluetooth.leaudio.dual_bidirection_swb.supported=true
+persist.bluetooth.leaudio.notify.idle.during.call=true
+persist.vendor.dpm.feature=11
+ro.audio.ihaladaptervendorextension_enabled=true
+ro.bluetooth.leaudio_offload.supported=true
+ro.telephony.sim_slots.count=2
+telephony.active_modems.max_count=2

@@ -1,0 +1,220 @@
+{
+  "binary_fixups": 0,
+  "presigned_apks": "Preserve delivered APK signatures; no platform resigning requested.",
+  "module_aliases": {
+    "names": [
+      "vendor.qti.ImsRtpService-V2-ndk",
+      "vendor.qti.qccsyshal_aidl-V1-ndk",
+      "vendor.qti.qccvndhal_aidl-V1-ndk"
+    ],
+    "evidence": "Both vendor and system_ext stock ELF paths exist; draft generator produced duplicate module names. _vendor disambiguates build names only, retaining filename and SONAME. Vendor/ODM dependency names point at vendor variants."
+  },
+  "sql_groups": [
+    {
+      "path": "vendor/etc/qcril_database/upgrade/config/0006.0_config.sql",
+      "flag": "FILEGROUP=proprietary_rildb_config_sql_files",
+      "sha256": "64adb79e20721e94b80f484de982e9b24ccb3f1bb7156032d297ff9ac607391e"
+    },
+    {
+      "path": "vendor/etc/qcril_database/upgrade/config/0007.0_config.sql",
+      "flag": "FILEGROUP=proprietary_rildb_config_sql_files",
+      "sha256": "cdb1ad2fe88d70471a4f61eac4063726e80d8a8302bff66d318669fe40bea460"
+    },
+    {
+      "path": "vendor/etc/qcril_database/upgrade/config/0008.0_config.sql",
+      "flag": "FILEGROUP=proprietary_rildb_config_sql_files",
+      "sha256": "422618e5c09ec3f64aa92056039d32bcd010cbe65a93799a3c98b6ebcdd4fadf"
+    },
+    {
+      "path": "vendor/etc/qcril_database/upgrade/config/0009.0_config.sql",
+      "flag": "FILEGROUP=proprietary_rildb_config_sql_files",
+      "sha256": "f7a06070821003f5ddeb884be97adc674d85627d8bf631c5ad5b4e0458617363"
+    },
+    {
+      "path": "vendor/etc/qcril_database/upgrade/config/0010.0_config.sql",
+      "flag": "FILEGROUP=proprietary_rildb_config_sql_files",
+      "sha256": "1898e780c54928e45a7abfbd1ecc736a38fd1d304abe8d7d26ef5ab3562f50e8"
+    },
+    {
+      "path": "vendor/etc/qcril_database/upgrade/config/0011.0_config.sql",
+      "flag": "FILEGROUP=proprietary_rildb_config_sql_files",
+      "sha256": "1898e780c54928e45a7abfbd1ecc736a38fd1d304abe8d7d26ef5ab3562f50e8"
+    },
+    {
+      "path": "vendor/etc/qcril_database/upgrade/config/0012.0_config.sql",
+      "flag": "FILEGROUP=proprietary_rildb_config_sql_files",
+      "sha256": "c23455de50f7678b0b5167b364c715d6044c21644c4f38522e3e30eb0e370193"
+    },
+    {
+      "path": "vendor/etc/qcril_database/upgrade/config/0013.0_config.sql",
+      "flag": "FILEGROUP=proprietary_rildb_config_sql_files",
+      "sha256": "a53ccfb17558ba853497d3c592b83f60c564ddd131134747cdda7cbf6d0ce3f1"
+    },
+    {
+      "path": "vendor/etc/qcril_database/upgrade/config/0014.0_config.sql",
+      "flag": "FILEGROUP=proprietary_rildb_config_sql_files",
+      "sha256": "901a5f3f36e5b65f9c0a14ebeac98638f4e09d5638861e002e416e874b4b7f61"
+    },
+    {
+      "path": "vendor/etc/qcril_database/upgrade/config/0015.0_config.sql",
+      "flag": "FILEGROUP=proprietary_rildb_config_sql_files",
+      "sha256": "5c2bb5ef446f8419673f2c115a4b7555936d0ce6b4c92a57ffceb25266f99141"
+    },
+    {
+      "path": "vendor/etc/qcril_database/upgrade/config/0016.0_config.sql",
+      "flag": "FILEGROUP=proprietary_rildb_config_sql_files",
+      "sha256": "60fdf7360f2b5ffe4da8def99fb1c95edc8ffdc12467a27baa49f7168d19a7d9"
+    },
+    {
+      "path": "vendor/etc/qcril_database/upgrade/other/0000_initial_qcrilnr.sql",
+      "flag": "FILEGROUP=proprietary_rildb_other_sql_files",
+      "sha256": "b05f47b481d80c2c51bebec065d8c18a8382ad297a915d2f9fb871d948167000"
+    },
+    {
+      "path": "vendor/etc/qcril_database/upgrade/other/0001_version_intro_qcrilnr.sql",
+      "flag": "FILEGROUP=proprietary_rildb_other_sql_files",
+      "sha256": "89b42be5b8bd4d7c23bb714cc57b2039a41c222ebecb54667254c075d741dd18"
+    },
+    {
+      "path": "vendor/etc/qcril_database/upgrade/other/0002_version_add_wps_config_qcrilnr.sql",
+      "flag": "FILEGROUP=proprietary_rildb_other_sql_files",
+      "sha256": "502f27079b1c65f9e7c9dc8cb251ef80ef06869378c87bb82e36dd80b27dc1d6"
+    },
+    {
+      "path": "vendor/etc/qcril_database/upgrade/other/0003_version_update_wps_config_qcrilnr.sql",
+      "flag": "FILEGROUP=proprietary_rildb_other_sql_files",
+      "sha256": "dc55bd55dfc592566a8344c2e26d37b4f631194a08644b4964f6ed0968105698"
+    },
+    {
+      "path": "vendor/etc/qcril_database/upgrade/other/0004_version_update_ecc_table_qcrilnr.sql",
+      "flag": "FILEGROUP=proprietary_rildb_other_sql_files",
+      "sha256": "ec74976ff106af44d49e6ff3a6d12e63b3f2bbd19bda3acf312f90b149a2a787"
+    },
+    {
+      "path": "vendor/etc/qcril_database/upgrade/other/0005_version_update_ecc_table_qcrilnr.sql",
+      "flag": "FILEGROUP=proprietary_rildb_other_sql_files",
+      "sha256": "1dbb5ee3f9292fc3187f19fb6d195c00e835b9d767315179248c29ec3a259c85"
+    },
+    {
+      "path": "vendor/etc/qcril_database/upgrade/other/0006_version_change_property_table_qcrilnr.sql",
+      "flag": "FILEGROUP=proprietary_rildb_other_sql_files",
+      "sha256": "aac11d6fd236034c9c44c453efce159cbd9dbbb19344bdd718759902e4af671f"
+    },
+    {
+      "path": "vendor/etc/qcril_database/upgrade/other/0007_version_update_ecc_table_qcrilnr.sql",
+      "flag": "FILEGROUP=proprietary_rildb_other_sql_files",
+      "sha256": "7a8d15303f29eddc33b12c105083abc1d3f567048899714d1710ffa721384815"
+    },
+    {
+      "path": "vendor/etc/qcril_database/upgrade/other/0008_version_update_ecc_table.sql",
+      "flag": "FILEGROUP=proprietary_rildb_other_sql_files",
+      "sha256": "e01cd6adcd745ef28f134ed29baed19ed2eb2d8b43adb2bfbf0da671003ab02e"
+    },
+    {
+      "path": "vendor/etc/qcril_database/upgrade/other/0009_version_update_ecc_table.sql",
+      "flag": "FILEGROUP=proprietary_rildb_other_sql_files",
+      "sha256": "71919236584cdb999c298cbb197b8574f1571f623500fad7749a2bfa027f7207"
+    },
+    {
+      "path": "vendor/etc/qcril_database/upgrade/other/0010_version_update_ecc_table.sql",
+      "flag": "FILEGROUP=proprietary_rildb_other_sql_files",
+      "sha256": "e8fbef006faa0343fbc1d6d44687b1d1a202d8a9a6f20d8fe6c6d6eb518d8485"
+    },
+    {
+      "path": "vendor/etc/qcril_database/upgrade/other/0011_version_update_ecc_table.sql",
+      "flag": "FILEGROUP=proprietary_rildb_other_sql_files",
+      "sha256": "72395d4975e09ed4745c6d3395d95158dee47cffe217c03be1d8c0dfb77be016"
+    },
+    {
+      "path": "vendor/etc/qcril_database/upgrade/other/0012_version_update_ecc_table.sql",
+      "flag": "FILEGROUP=proprietary_rildb_other_sql_files",
+      "sha256": "52200614861ab0d10baf97dbaba968ba90c4cc4ded45f555b8f7d237a90bb31c"
+    },
+    {
+      "path": "vendor/etc/qcril_database/upgrade/other/0013_version_update_ecc_table.sql",
+      "flag": "FILEGROUP=proprietary_rildb_other_sql_files",
+      "sha256": "8da449eb5435a5cb1fc3e190cfd25fb9032f7cb17e4c1262864534e2bc92a709"
+    },
+    {
+      "path": "vendor/etc/qcril_database/upgrade/other/0014_version_update_modules.sql",
+      "flag": "FILEGROUP=proprietary_rildb_other_sql_files",
+      "sha256": "7df070ffe184dcb323da942e0da20800b8bef662ef978a40d11c740d2eb3c246"
+    },
+    {
+      "path": "vendor/etc/qcril_database/upgrade/other/0015_version_add_iccid_clir_pref_table.sql",
+      "flag": "FILEGROUP=proprietary_rildb_other_sql_files",
+      "sha256": "381d92f7b091e139591857d27db670b7c0e08fd0447e37cffc4d9da099f4a510"
+    },
+    {
+      "path": "vendor/etc/qcril_database/upgrade/other/0016_version_update_ecc_table.sql",
+      "flag": "FILEGROUP=proprietary_rildb_other_sql_files",
+      "sha256": "082f87d1764186a6610b46f0f5ef0e43556735025e95a1655df77941cc80eebb"
+    }
+  ],
+  "sql_evidence": "device/xiaomi/sm8850-common/qcril-database/Android.bp explicitly references these two groups. Every member exists in verified Nezha stock and contains SQL.",
+  "stock_verified_symlinks": [
+    {
+      "source": "odm/lib64/camera/aon_front_i_1.pb",
+      "installed_link": "vendor/lib64/camera/aon_front_i_1.pb",
+      "stock_target": "/odm/lib64/camera/aon_front_i_1.pb",
+      "canonical_target": "/odm/lib64/camera/aon_front_i_1.pb",
+      "evidence": "Exact stock symlink target resolves to the selected stock file. Generated build symlink; no blob patch."
+    },
+    {
+      "source": "odm/lib64/camera/aon_rear_i_2.pb",
+      "installed_link": "vendor/lib64/camera/aon_rear_i_2.pb",
+      "stock_target": "/odm/lib64/camera/aon_rear_i_2.pb",
+      "canonical_target": "/odm/lib64/camera/aon_rear_i_2.pb",
+      "evidence": "Exact stock symlink target resolves to the selected stock file. Generated build symlink; no blob patch."
+    },
+    {
+      "source": "vendor/lib64/libmisoundfx_aosp_aidl_ext.so",
+      "installed_link": "vendor/lib64/soundfx/libmisoundfx_aosp_aidl.so",
+      "stock_target": "/vendor/lib64/libmisoundfx_aosp_aidl_ext.so",
+      "canonical_target": "/vendor/lib64/libmisoundfx_aosp_aidl_ext.so",
+      "evidence": "Exact stock symlink target resolves to the selected stock file. Generated build symlink; no blob patch."
+    },
+    {
+      "source": "vendor/lib64/egl/libEGL_adreno.so",
+      "installed_link": "vendor/lib64/libEGL_adreno.so",
+      "stock_target": "egl/libEGL_adreno.so",
+      "canonical_target": "/vendor/lib64/egl/libEGL_adreno.so",
+      "evidence": "Exact stock symlink target resolves to the selected stock file. Generated build symlink; no blob patch."
+    },
+    {
+      "source": "vendor/lib64/egl/libGLESv2_adreno.so",
+      "installed_link": "vendor/lib64/libGLESv2_adreno.so",
+      "stock_target": "egl/libGLESv2_adreno.so",
+      "canonical_target": "/vendor/lib64/egl/libGLESv2_adreno.so",
+      "evidence": "Exact stock symlink target resolves to the selected stock file. Generated build symlink; no blob patch."
+    },
+    {
+      "source": "vendor/lib64/egl/libq3dtools_adreno.so",
+      "installed_link": "vendor/lib64/libq3dtools_adreno.so",
+      "stock_target": "egl/libq3dtools_adreno.so",
+      "canonical_target": "/vendor/lib64/egl/libq3dtools_adreno.so",
+      "evidence": "Exact stock symlink target resolves to the selected stock file. Generated build symlink; no blob patch."
+    },
+    {
+      "source": "system_ext/lib64/libimscamera_jni.so",
+      "installed_link": "system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so",
+      "stock_target": "/system_ext/lib64/libimscamera_jni.so",
+      "canonical_target": "/system_ext/lib64/libimscamera_jni.so",
+      "evidence": "Exact stock symlink target resolves to the selected stock file. Generated build symlink; no blob patch."
+    },
+    {
+      "source": "system_ext/lib64/libimsmedia_jni.so",
+      "installed_link": "system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so",
+      "stock_target": "/system_ext/lib64/libimsmedia_jni.so",
+      "canonical_target": "/system_ext/lib64/libimsmedia_jni.so",
+      "evidence": "Exact stock symlink target resolves to the selected stock file. Generated build symlink; no blob patch."
+    },
+    {
+      "source": "system_ext/lib64/libwfdnative.so",
+      "installed_link": "system_ext/priv-app/WfdService/lib/arm64/libwfdnative.so",
+      "stock_target": "/system_ext/lib64/libwfdnative.so",
+      "canonical_target": "/system_ext/lib64/libwfdnative.so",
+      "evidence": "Exact stock symlink target resolves to the selected stock file. Generated build symlink; no blob patch."
+    }
+  ]
+}

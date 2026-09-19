@@ -1,0 +1,248 @@
+{
+  "selected_blobs": 3096,
+  "groups": {
+    "device": 1374,
+    "common": 1722
+  },
+  "module_count": 1791,
+  "literal_source_references": 1808,
+  "installed_symlinks": [
+    {
+      "name": "vendor_lib64_camera_aon_front_i_1_pb",
+      "installed_location": "lib64/camera/aon_front_i_1.pb",
+      "symlink_target": "/odm/lib64/camera/aon_front_i_1.pb",
+      "target_in_selected_payload": true
+    },
+    {
+      "name": "vendor_lib64_camera_aon_rear_i_2_pb",
+      "installed_location": "lib64/camera/aon_rear_i_2.pb",
+      "symlink_target": "/odm/lib64/camera/aon_rear_i_2.pb",
+      "target_in_selected_payload": true
+    },
+    {
+      "name": "system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so",
+      "installed_location": "priv-app/ims/lib/arm64/libimscamera_jni.so",
+      "symlink_target": "/system_ext/lib64/libimscamera_jni.so",
+      "target_in_selected_payload": true
+    },
+    {
+      "name": "system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so",
+      "installed_location": "priv-app/ims/lib/arm64/libimsmedia_jni.so",
+      "symlink_target": "/system_ext/lib64/libimsmedia_jni.so",
+      "target_in_selected_payload": true
+    },
+    {
+      "name": "system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so",
+      "installed_location": "priv-app/WfdService/lib/arm64/libwfdnative.so",
+      "symlink_target": "/system_ext/lib64/libwfdnative.so",
+      "target_in_selected_payload": true
+    },
+    {
+      "name": "vendor_lib64_libEGL_adreno_so",
+      "installed_location": "lib64/libEGL_adreno.so",
+      "symlink_target": "/vendor/lib64/egl/libEGL_adreno.so",
+      "target_in_selected_payload": true
+    },
+    {
+      "name": "vendor_lib64_libGLESv2_adreno_so",
+      "installed_location": "lib64/libGLESv2_adreno.so",
+      "symlink_target": "/vendor/lib64/egl/libGLESv2_adreno.so",
+      "target_in_selected_payload": true
+    },
+    {
+      "name": "vendor_lib64_libq3dtools_adreno_so",
+      "installed_location": "lib64/libq3dtools_adreno.so",
+      "symlink_target": "/vendor/lib64/egl/libq3dtools_adreno.so",
+      "target_in_selected_payload": true
+    },
+    {
+      "name": "vendor_lib64_soundfx_libmisoundfx_aosp_aidl_so",
+      "installed_location": "lib64/soundfx/libmisoundfx_aosp_aidl.so",
+      "symlink_target": "/vendor/lib64/libmisoundfx_aosp_aidl_ext.so",
+      "target_in_selected_payload": true
+    }
+  ],
+  "transformed_blobs": [
+    {
+      "path": "vendor/xiaomi/nezha/proprietary/odm/etc/camera/snsc_bokeh_motiontuning.xml",
+      "source": "/home/kevte89/android/stock/nezha_a16_cn_309/super_extracted/odm_a.fs/etc/camera/snsc_bokeh_motiontuning.xml",
+      "original_sha256": "0593c3d5d01d136674670112aa291f88c700ee24441a2951fefd1fea7e012086",
+      "output_sha256": "a854545b86e2b66f6ce436094b231db55354b192920524ad599814d5709e9445",
+      "operations": [
+        {
+          "kind": "xml_declaration"
+        }
+      ]
+    },
+    {
+      "path": "vendor/xiaomi/nezha/proprietary/odm/etc/camera/snsc_enhance_motiontuning.xml",
+      "source": "/home/kevte89/android/stock/nezha_a16_cn_309/super_extracted/odm_a.fs/etc/camera/snsc_enhance_motiontuning.xml",
+      "original_sha256": "0630a6635ec658d1386e77e942627c957b391bbfc4a2f80cdd1b12104dc3966c",
+      "output_sha256": "49baea3f02d52f1d9c676c9735f0815e04ad866ef03adc5674835aebdaa848a7",
+      "operations": [
+        {
+          "kind": "xml_declaration"
+        }
+      ]
+    },
+    {
+      "path": "vendor/xiaomi/nezha/proprietary/odm/etc/camera/snsc_motiontuning.xml",
+      "source": "/home/kevte89/android/stock/nezha_a16_cn_309/super_extracted/odm_a.fs/etc/camera/snsc_motiontuning.xml",
+      "original_sha256": "a2982ee9ba10ad3bee83cdecc320923406003aeefae818a7c1e1ebcd16800b43",
+      "output_sha256": "653a25d77a9cf46703e7a38d4b63d9bb4e3a43b5b124ae4db0ee125850943549",
+      "operations": [
+        {
+          "kind": "xml_declaration"
+        }
+      ]
+    },
+    {
+      "path": "vendor/xiaomi/nezha/proprietary/odm/etc/camera/snsc_noface_motiontuning.xml",
+      "source": "/home/kevte89/android/stock/nezha_a16_cn_309/super_extracted/odm_a.fs/etc/camera/snsc_noface_motiontuning.xml",
+      "original_sha256": "382057e898d72abecec77e9086279ce9bb207d7701b2bfcebc76545e8f475f04",
+      "output_sha256": "05571ce8afdfc84c307d4cb6a289bc7ffe64d6f78de10481275f7cbd54efc4d7",
+      "operations": [
+        {
+          "kind": "xml_declaration"
+        }
+      ]
+    },
+    {
+      "path": "vendor/xiaomi/nezha/proprietary/odm/lib64/libvega_common_ecd.so",
+      "source": "/home/kevte89/android/stock/nezha_a16_cn_309/super_extracted/odm_a.fs/lib64/libvega_common_ecd.so",
+      "original_sha256": "cbc4f5976ba1b2d6975f8e32c19e9fe183c6f28f1f628cb84db4dd40ec8e19b3",
+      "output_sha256": "dc6a4e6163aedb6ac4f6589db355f7c3d3dfa4023ee91a4f591f066f8f9d16b1",
+      "operations": [
+        {
+          "kind": "set_soname",
+          "value": "libvega_common_ecd.so"
+        }
+      ]
+    },
+    {
+      "path": "vendor/xiaomi/sm8850-common/proprietary/system_ext/etc/init/qspa_system.rc",
+      "source": "/home/kevte89/android/stock/nezha_a16_cn_309/super_extracted/system_ext_a.fs/etc/init/qspa_system.rc",
+      "original_sha256": "a1231b13364f2334e96da7343cca4f13fa814bf804919f704e8786de86a5595c",
+      "output_sha256": "ea275e3cb65cb7f4dfd5bd27e67aed10afe72abac124d7340491078551f43275",
+      "operations": [
+        {
+          "kind": "qspa_default_import"
+        }
+      ]
+    },
+    {
+      "path": "vendor/xiaomi/nezha/proprietary/vendor/lib64/libSnpeDspV66Stub.so",
+      "source": "/home/kevte89/android/stock/nezha_a16_cn_309/super_extracted/vendor_a.fs/lib64/libSnpeDspV66Stub.so",
+      "original_sha256": "ca99c7fad8c145ab11bff049f05e9507fc33ca5a786975d070688b526e2514a8",
+      "output_sha256": "60caa715116d14c8840a61204e994e906f4384fefefe704e7d798dd24b38d140",
+      "operations": [
+        {
+          "kind": "set_soname",
+          "value": "libSnpeDspV66Stub.so"
+        }
+      ]
+    },
+    {
+      "path": "vendor/xiaomi/nezha/proprietary/vendor/lib64/libSnpeHtpV68CalculatorStub.so",
+      "source": "/home/kevte89/android/stock/nezha_a16_cn_309/super_extracted/vendor_a.fs/lib64/libSnpeHtpV68CalculatorStub.so",
+      "original_sha256": "5721bc8871111941f68560dc6b7d98b971707d14099a5c73bac4004e3f11b324",
+      "output_sha256": "2b1453d3412cd6f3fc82f8886f0c715646e96883af873f05fa69f772bf567587",
+      "operations": [
+        {
+          "kind": "set_soname",
+          "value": "libSnpeHtpV68CalculatorStub.so"
+        }
+      ]
+    },
+    {
+      "path": "vendor/xiaomi/nezha/proprietary/vendor/lib64/libSnpeHtpV69CalculatorStub.so",
+      "source": "/home/kevte89/android/stock/nezha_a16_cn_309/super_extracted/vendor_a.fs/lib64/libSnpeHtpV69CalculatorStub.so",
+      "original_sha256": "113574ef971f6d4422e7dcabef888901e69c072cd377f0b72991ad67480e0dc1",
+      "output_sha256": "e59f3651e81d64e15680ce7e5594565fc9048435aa42950f00cb743208167468",
+      "operations": [
+        {
+          "kind": "set_soname",
+          "value": "libSnpeHtpV69CalculatorStub.so"
+        }
+      ]
+    },
+    {
+      "path": "vendor/xiaomi/nezha/proprietary/vendor/lib64/libSnpeHtpV73CalculatorStub.so",
+      "source": "/home/kevte89/android/stock/nezha_a16_cn_309/super_extracted/vendor_a.fs/lib64/libSnpeHtpV73CalculatorStub.so",
+      "original_sha256": "a47506ed710933a4e72358c449779fbd7b93d955deb2bcf975d9c30c6fcd8781",
+      "output_sha256": "b13df226e526e1e830adef29a82a3917cbd794aa9ac976438f42cf74aa95aeec",
+      "operations": [
+        {
+          "kind": "set_soname",
+          "value": "libSnpeHtpV73CalculatorStub.so"
+        }
+      ]
+    },
+    {
+      "path": "vendor/xiaomi/nezha/proprietary/vendor/lib64/libSnpeHtpV75CalculatorStub.so",
+      "source": "/home/kevte89/android/stock/nezha_a16_cn_309/super_extracted/vendor_a.fs/lib64/libSnpeHtpV75CalculatorStub.so",
+      "original_sha256": "9b252ae0704e11e8680a6ebfa8d43210f0059cd21763c5a2f20590a8ebb3afe3",
+      "output_sha256": "9e54b0726923319c71d3a6484aaa936f3428840ecc9fe030b94daa5f5b440e8a",
+      "operations": [
+        {
+          "kind": "set_soname",
+          "value": "libSnpeHtpV75CalculatorStub.so"
+        }
+      ]
+    },
+    {
+      "path": "vendor/xiaomi/nezha/proprietary/vendor/lib64/libSnpeHtpV79CalculatorStub.so",
+      "source": "/home/kevte89/android/stock/nezha_a16_cn_309/super_extracted/vendor_a.fs/lib64/libSnpeHtpV79CalculatorStub.so",
+      "original_sha256": "bb6a7b09919bbb47f2ca06e3e5b46c70457185980ed2eb93d1e9349624e0d67c",
+      "output_sha256": "0001173a783227a83967377a13d95bca08257b4de75e439e61aa7e0dc07949c0",
+      "operations": [
+        {
+          "kind": "set_soname",
+          "value": "libSnpeHtpV79CalculatorStub.so"
+        }
+      ]
+    },
+    {
+      "path": "vendor/xiaomi/nezha/proprietary/vendor/lib64/libSnpeHtpV81CalculatorStub.so",
+      "source": "/home/kevte89/android/stock/nezha_a16_cn_309/super_extracted/vendor_a.fs/lib64/libSnpeHtpV81CalculatorStub.so",
+      "original_sha256": "288d381557e3678d0bb1c7461ae272ffa1482ed4598e25edba6b2cbbfdae6465",
+      "output_sha256": "a098295a51b19a4e33e09bd23bbd7f7700f6d22fa3bc1e6a9dfd4d569991da51",
+      "operations": [
+        {
+          "kind": "set_soname",
+          "value": "libSnpeHtpV81CalculatorStub.so"
+        }
+      ]
+    },
+    {
+      "path": "vendor/xiaomi/sm8850-common/proprietary/vendor/lib64/libaudioserviceexampleimpl.so",
+      "source": "/home/kevte89/android/stock/nezha_a16_cn_309/super_extracted/vendor_a.fs/lib64/libaudioserviceexampleimpl.so",
+      "original_sha256": "6e878cd3c9133bc6249c8868b5a2f495f5bf4d4f79101c713d99118e8df17dfc",
+      "output_sha256": "39485313f1932b0d9a258799a6a91cda2585877375ca1c025762d0193904a815",
+      "operations": [
+        {
+          "kind": "add_needed",
+          "value": "libaudioutils_shim.so"
+        },
+        {
+          "kind": "add_needed",
+          "value": "libbluetooth_audio_session_aidl_shim.so"
+        }
+      ]
+    },
+    {
+      "path": "vendor/xiaomi/sm8850-common/proprietary/vendor/lib64/libqms_xiaomi.so",
+      "source": "/home/kevte89/android/stock/nezha_a16_cn_309/super_extracted/vendor_a.fs/lib64/libqms_xiaomi.so",
+      "original_sha256": "019219542f59b6b549b7c3fb957f1b8065db1c4b1545cd919aea10506b5d905e",
+      "output_sha256": "d103e26c7490febe31c4f4a8c8d6b8fe2bccf40d11b8f94b0448bcfe4e3663bd",
+      "operations": [
+        {
+          "kind": "set_soname",
+          "value": "libqms_xiaomi.so"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "limitations": "Local generated declarations only; not an evaluated Soong namespace/dependency/ELF-symbol graph."
+}

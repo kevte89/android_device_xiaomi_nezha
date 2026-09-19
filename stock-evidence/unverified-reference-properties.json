@@ -1,0 +1,218 @@
+[
+  {
+    "partition": "vendor",
+    "property": "bluetooth.device.class_of_device"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.early.app.duration.144"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.early.app.duration.60"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.early.sf.duration.120"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.early.sf.duration.144"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.early.sf.duration.20"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.early.sf.duration.24"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.early.sf.duration.30"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.early.sf.duration.40"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.early.sf.duration.60"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.early.sf.duration.90"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.earlyGl.app.duration.144"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.earlyGl.app.duration.60"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.earlyGl.sf.duration.120"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.earlyGl.sf.duration.144"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.earlyGl.sf.duration.20"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.earlyGl.sf.duration.24"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.earlyGl.sf.duration.30"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.earlyGl.sf.duration.40"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.earlyGl.sf.duration.60"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.earlyGl.sf.duration.90"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.late.app.duration.144"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.late.app.duration.60"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.late.sf.duration.120"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.late.sf.duration.144"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.late.sf.duration.20"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.late.sf.duration.24"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.late.sf.duration.30"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.late.sf.duration.40"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.late.sf.duration.60"
+  },
+  {
+    "partition": "vendor",
+    "property": "debug.sf.late.sf.duration.90"
+  },
+  {
+    "partition": "vendor",
+    "property": "media.stagefright.audio.deep"
+  },
+  {
+    "partition": "vendor",
+    "property": "persist.vendor.fingerprint.type"
+  },
+  {
+    "partition": "vendor",
+    "property": "persist.vendor.radio.dynamic_sar"
+  },
+  {
+    "partition": "vendor",
+    "property": "ro.arm64.memtag.bootctl_supported"
+  },
+  {
+    "partition": "vendor",
+    "property": "ro.telephony.default_network"
+  },
+  {
+    "partition": "vendor",
+    "property": "vendor.media.omx"
+  },
+  {
+    "partition": "vendor",
+    "property": "vendor.wv.oemcrypto.debug.enable_prov40"
+  },
+  {
+    "partition": "odm",
+    "property": "debug.sf.set_idle_timer_ms"
+  },
+  {
+    "partition": "odm",
+    "property": "persist.vendor.cameraopt.loglevel"
+  },
+  {
+    "partition": "odm",
+    "property": "persist.vendor.fingerprint.sensor_location"
+  },
+  {
+    "partition": "odm",
+    "property": "persist.vendor.fingerprint.type"
+  },
+  {
+    "partition": "odm",
+    "property": "ro.vendor.display.video_or_camera_fps.support"
+  },
+  {
+    "partition": "odm",
+    "property": "ro.vendor.proxcal.factor"
+  },
+  {
+    "partition": "system",
+    "property": "persist.vendor.data.mutualex.mode"
+  },
+  {
+    "partition": "system",
+    "property": "remote_provisioning.enable_rkpd"
+  },
+  {
+    "partition": "system",
+    "property": "remote_provisioning.hostname"
+  },
+  {
+    "partition": "system",
+    "property": "ro.media.xml_variant.profiles"
+  },
+  {
+    "partition": "system_ext",
+    "property": "bluetooth.core.le.max_number_of_concurrent_connections"
+  },
+  {
+    "partition": "system_ext",
+    "property": "persist.dbg.volte_avail_ovr"
+  },
+  {
+    "partition": "system_ext",
+    "property": "persist.dbg.vt_avail_ovr"
+  },
+  {
+    "partition": "system_ext",
+    "property": "persist.dbg.wfc_avail_ovr"
+  },
+  {
+    "partition": "system_ext",
+    "property": "ril.subscription.types"
+  },
+  {
+    "partition": "system_ext",
+    "property": "telephony.lteOnCdmaDevice"
+  }
+]

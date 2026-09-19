@@ -1,0 +1,39 @@
+[
+  {
+    "path": "device/xiaomi/nezha",
+    "own_git": false,
+    "repo_project": false,
+    "future_repository": "android_device_xiaomi_nezha",
+    "status": "NOT_A_SEPARATE_GIT_REPOSITORY; do not report parent-home git status"
+  },
+  {
+    "path": "device/xiaomi/nezha-kernel",
+    "own_git": false,
+    "repo_project": false,
+    "future_repository": "android_device_xiaomi_nezha-kernel",
+    "status": "NOT_A_SEPARATE_GIT_REPOSITORY; do not report parent-home git status"
+  },
+  {
+    "path": "device/xiaomi/sm8850-common",
+    "own_git": true,
+    "repo_project": true,
+    "future_repository": "Existing shared source repository; keep separate",
+    "commit": "7e86c4c5f48ff6ada81f966f9a70a7f1dc64f74f",
+    "status": "",
+    "remotes": "lolipuru\thttps://github.com/lolipuru/android_device_xiaomi_sm8850-common (fetch)\nlolipuru\thttps://github.com/lolipuru/android_device_xiaomi_sm8850-common (push)\n"
+  },
+  {
+    "path": "vendor/xiaomi/nezha",
+    "own_git": false,
+    "repo_project": false,
+    "future_repository": "proprietary_vendor_xiaomi_nezha",
+    "status": "NOT_A_SEPARATE_GIT_REPOSITORY; do not report parent-home git status"
+  },
+  {
+    "path": "vendor/xiaomi/sm8850-common",
+    "own_git": false,
+    "repo_project": false,
+    "future_repository": "proprietary_vendor_xiaomi_sm8850-common",
+    "status": "NOT_A_SEPARATE_GIT_REPOSITORY; do not report parent-home git status"
+  }
+]
