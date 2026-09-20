@@ -310,7 +310,7 @@ vendor/lib64/camera/components/com.qti.node.aon.so|fb8b247d4c8a021ec4117330484f3
 vendor/lib64/camera/components/com.qti.node.customhwnode.so|c7a1c7c11189148d6c34bdd70c01414f20dd0993
 vendor/lib64/camera/components/com.qti.node.depth.so|aead1f6f1bc8f3bccfe924d8ed286b230768415d
 vendor/lib64/camera/components/com.qti.node.depthprovider.so|823ea6041b1fcf0d3b0abae917ecbaa044b3de56
-vendor/lib64/camera/components/com.qti.node.dewarp.so|96066f9b91a8f26b7b7fc24928e4bdba1f460e5b
+vendor/lib64/camera/components/com.qti.node.dewarp.so|61c8c5e55716736f24de3bafe3fec5d15b002c6a
 vendor/lib64/camera/components/com.qti.node.dummydepth.so|6b541e33f944dda71692529550a5baded614e58f
 vendor/lib64/camera/components/com.qti.node.dummyrtb.so|8358e2a89316760b59ccee53d94ab266d465c6b9
 vendor/lib64/camera/components/com.qti.node.dummysat.so|19e4e30b2e4bc4f01fb81a8321ad3fbe85bb3891
@@ -588,7 +588,7 @@ vendor/lib64/libcom.xiaomi.sensorpolicy.so|b1bbc1ab048afda21509b2dc1a0752a199f34
 vendor/lib64/libcom.xiaomi.signaltrigger.so|de7c81409de09883fd63986b34cfac0b6b4467a4
 vendor/lib64/libcom.xiaomi.threadpool.so|a9ca16777d1b7992e026042fc9cf67635dc3e4ea
 vendor/lib64/libcom.xiaomi.timer.so|a767c3eaa0d9000480fc0c6a5c0dbfd50c0c1fcb
-vendor/lib64/libdng_sdk.so;MODULE_SUFFIX=_vendor|4f14cf06ec102b50f786445f7f10368866492019
+vendor/lib64/libdng_sdk.so:vendor/lib64/libdng_sdk_vendor.so|b5a353194ed9df9704bcd73846702f60ecf1d301
 vendor/lib64/libdscaalgo.so|95a339da7121f7e2e155e1f54951738b9994f7bf
 vendor/lib64/libecoengine.so|a2b431fe12a2866877309ac656e02a285e82c71c
 vendor/lib64/libfastmessage.so|2450729e6f60d39dc0fd6bce5e351e1e59323169
@@ -650,7 +650,7 @@ vendor/lib64/libsiminputgenutil.so|994141b398a25e2328f07e286b94da0855d232b9
 vendor/lib64/libsimulation.so|62c7130176f8ee46be02896f0fe96a47429a7965
 vendor/lib64/libubifocus.so|3b00b8de845030d177e7b0323760341f29e39ff8
 vendor/lib64/vendor.qti.hardware.camera.aon-service-impl.so|5410116727b60da05a07de59370255bb9b6471bb
-vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so|4744badd7230bc29ab1bba3a5c03afe68d9aef4e
+vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so|30f14dc0dde678baedc3c51a886faffe7cc25824
 vendor/lib64/vendor.xiaomi.hardware.aidl.intentaware-V1-impl.so|7dd819b166fa84c21eb288d44dbc69acff377919
 vendor/lib64/vendor.xiaomi.hardware.aidl.intentaware-V1-ndk.so|8774cac2ac1ad2e35d2847a2243527d00de2f2d0
 vendor/lib64/vendor.xiaomi.hardware.aidlbgservice-V1-impl.so|6083ccc35c31a675d052ac214fc8e18306378243
@@ -661,9 +661,9 @@ vendor/lib64/vendor.xiaomi.hardware.bgservice@1.0-impl.so|ab47e2817552da0741a837
 vendor/lib64/vendor.xiaomi.hardware.bgservice@1.0.so|dfc7b6c2c0582c06d43351b61f752b2f85d355d3
 vendor/lib64/vendor.xiaomi.hardware.camera.companion-V1-ndk.so|bcde64799d963a5ca27a6a53da891b50f18a085d
 vendor/lib64/vendor.xiaomi.hardware.camera.companion-impl.so|c6884475d93f16ae0c06e5b5789ba83bc4ae21eb
-vendor/lib64/vendor.xiaomi.hardware.camera.injection-V1-ndk.so|01ac25fad92343d6dc23d31b01d3954a3a134aec
-vendor/lib64/vendor.xiaomi.hardware.camera.injection-client.so|b34758b0819a234b8993ac2a15869553be6f61ab
-vendor/lib64/vendor.xiaomi.hardware.camera.injection-service.so|bc63543799572249f6d010913a62c485acdb4c2e
+vendor/lib64/vendor.xiaomi.hardware.camera.injection-V1-ndk.so|cdb5660dab457cb41c5f6e13dc3f71080ba336d1
+vendor/lib64/vendor.xiaomi.hardware.camera.injection-client.so|f1375f15bf48f2a7f70b0148370d983ef05838b9
+vendor/lib64/vendor.xiaomi.hardware.camera.injection-service.so|492eeb8d401ee89b79f7fccec4c376ae3f613a6e
 vendor/lib64/vendor.xiaomi.hardware.camera.mivimessage-V1-impl.so|d33cb37f153de4360e3c8f9ebc61489d8cf11395
 vendor/lib64/vendor.xiaomi.hardware.camera.mivimessage-V1-ndk.so|3183a0bde48eaa15629746bce77572f69fb5499f
 vendor/lib64/vendor.xiaomi.hardware.camera.synthetic-V1-ndk.so|33f7d8ef64a726c78c0d714c20cf6a6670d39e38
@@ -712,7 +712,7 @@ odm/lib64/camera/plugins/com.xiaomi.plugin.gainmapPostProc.so|95633ac3345a2bdf44
 odm/lib64/camera/plugins/com.xiaomi.plugin.gpu.so|2afb99733f3537ddda4b9e124f455747c110ec32
 odm/lib64/camera/plugins/com.xiaomi.plugin.heifedit.so|a43ae8245fc4bf289f149225aad711fcb110fcfa
 odm/lib64/camera/plugins/com.xiaomi.plugin.jpegrAggr.so|96c189c39311cd74ef43cb377a6ed9dd7de1ea5b
-odm/lib64/camera/plugins/com.xiaomi.plugin.losslessjpeg.so|ad4e618119cdafd6ab9a9aacc31a2265616a7991
+odm/lib64/camera/plugins/com.xiaomi.plugin.losslessjpeg.so|787508600fd2c3afd3a3e3c3aca7859752203a74
 odm/lib64/camera/plugins/com.xiaomi.plugin.memcpyCustomization.so|8229b04d9d4694dc5ab3d715ee3200c1ba4f5640
 odm/lib64/camera/plugins/com.xiaomi.plugin.mialgoanchor.so|2ae540b0a721327958529aa82c9f39cf62e68291
 odm/lib64/camera/plugins/com.xiaomi.plugin.mialgooptics.so|392a90d76662a47a4831e45e581d96b3896dfc20

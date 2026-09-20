@@ -37,7 +37,16 @@
       "type": "file",
       "sha256": "bcde474f3c223c6822b60a6cfbb6b172b32416cda01975243e5ef47d0dad81f1",
       "sha1": "a5662978d06820e8c5d9777f508ddc3effeb9969",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.graphics.common-V6-ndk.so",
+          "new": "android.hardware.graphics.common-V7-ndk.so"
+        }
+      ],
+      "output_sha256": "d37d87ec3153c6786cfdcd097344ebddecaa75ae5138050ca4be7f299be31ca1",
+      "output_sha1": "ad6f47ab4a0b9dc273d6ec1936e9bb6a19b95862"
     },
     {
       "path": "odm/bin/mlipayd",
@@ -9569,7 +9578,16 @@
       "type": "file",
       "sha256": "89635984b2cfcf17c2321b64cff4532b94e292bff2c77fdb5f72532f2f2db7d6",
       "sha1": "ad4e618119cdafd6ab9a9aacc31a2265616a7991",
-      "group": "device"
+      "group": "device",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "libdng_sdk.so",
+          "new": "libdng_sdk_vendor.so"
+        }
+      ],
+      "output_sha256": "9f4b90a0715f7f2df01a947273a647575f195da39c555557ad95ec5ccfa8ff8c",
+      "output_sha1": "787508600fd2c3afd3a3e3c3aca7859752203a74"
     },
     {
       "path": "odm/lib64/camera/plugins/com.xiaomi.plugin.memcpyCustomization.so",
@@ -12889,7 +12907,16 @@
       "type": "file",
       "sha256": "6cf0f01a43a7f5654f68defc2947c192bcffa78f0591213a35e9078242200bae",
       "sha1": "ba23da3a50e6314f512b8a66f3d1233689928548",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.media.audio.common.types-V4-cpp.so",
+          "new": "android.media.audio.common.types-V5-cpp.so"
+        }
+      ],
+      "output_sha256": "6a23b0522bac023d47154f29efdf1436284a99bd7b7b342423aee75277a42d79",
+      "output_sha1": "b826458a33774e43a424bc07ddd9889b08dd4550"
     },
     {
       "path": "system_ext/lib64/libwfdsinksm.so",
@@ -13692,7 +13719,16 @@
       "type": "file",
       "sha256": "87ed724229e3fe6fbb9b49ec1bda8c46d3ceedad38b0d839fcd58692f73523f6",
       "sha1": "5f89ee36bdb5925dabe1236674ecb6989e5161ea",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "vendor.qti.hardware.display.composer3-V1-ndk.so",
+          "new": "vendor.qti.hardware.display.composer3-V4-ndk.so"
+        }
+      ],
+      "output_sha256": "8cea7bd4431c8681df91386696d0ce634150d1c9e745c797d00cd6229daafa74",
+      "output_sha1": "fadbe249085688f0eb3ac51110ffc0a84d3acfe1"
     },
     {
       "path": "vendor/bin/hw/vendor.qti.hardware.minkipcbinder@1.0-service",
@@ -13780,7 +13816,16 @@
       "type": "file",
       "sha256": "1a88d1c9df92c68890722178dd51820b82b734dd6acffc352768652e5593ba89",
       "sha1": "9b5a80450bd192fff8187315259a871fc22db3af",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.media.c2-V1-ndk.so",
+          "new": "android.hardware.media.c2-V2-ndk.so"
+        }
+      ],
+      "output_sha256": "4e2765e81cf40fe1cb08483c4c0a1bccadef8f007f623cc0dea0608b35935b1b",
+      "output_sha1": "97d76bcffb909ae92bf8f542c6208944e533de97"
     },
     {
       "path": "vendor/bin/hw/vendor.qti.media.c2audio@1.0-service",
@@ -13791,7 +13836,16 @@
       "type": "file",
       "sha256": "327d114b13de9b60d50a4ae3eaf79dcc63cf7fd4b27b2f6d8c6a7c25007fb503",
       "sha1": "7cf939fb87db5225ed4a4b5d80e3e31b476ed90e",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.media.c2-V1-ndk.so",
+          "new": "android.hardware.media.c2-V2-ndk.so"
+        }
+      ],
+      "output_sha256": "3dce3c912f00b7fa80a5945debb1828fc5b357adc84044ee0524bd740a8f29fb",
+      "output_sha1": "3c5457be1b8d94af435e2535f25ad9cc39e75897"
     },
     {
       "path": "vendor/bin/hw/vendor.qti.psiclient@1.0-service",
@@ -14693,7 +14747,16 @@
       "type": "file",
       "sha256": "22300f077b19e48a0f427331625eb4b44de19d2ad2efa1d7d694cac4f74b0749",
       "sha1": "d3e3459d7bae45b6889cf0a0b837e9e4c2727baa",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "libtensorflowlite_c.so",
+          "new": "libtensorflowlite_c_vendor.so"
+        }
+      ],
+      "output_sha256": "4d68e46eac83414b522e640aabd210cdcd276d7f8a5820fbdcc862dc3cb7629c",
+      "output_sha1": "37b8ab5929ae04a4763cb8e6543ae9ea9c9e4523"
     },
     {
       "path": "vendor/bin/wifidisplayhalservice",
@@ -20963,7 +21026,16 @@
       "type": "file",
       "sha256": "b41e92df1a0250e238f2d7f0cb866e43b915d3135769daccfbe22df10d8ff8fc",
       "sha1": "83cf382dee6da560c9aec6e8960acc5815ee1fb8",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.bluetooth.audio-V5-ndk.so",
+          "new": "android.hardware.bluetooth.audio-V6-ndk.so"
+        }
+      ],
+      "output_sha256": "04873e6145fc0522da1f91852728770e2cf7e6552c1df55b55b8c4a68962163b",
+      "output_sha1": "445462106d82b62ff8d71c984df19f9fde76f188"
     },
     {
       "path": "vendor/lib64/camera/bitmlconfig.bin",
@@ -21293,7 +21365,16 @@
       "type": "file",
       "sha256": "2b300627ca6bb5294ca4a63b2a0aa606d595463417ea37220102ead682ef60df",
       "sha1": "96066f9b91a8f26b7b7fc24928e4bdba1f460e5b",
-      "group": "device"
+      "group": "device",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.graphics.allocator-V1-ndk.so",
+          "new": "android.hardware.graphics.allocator-V2-ndk.so"
+        }
+      ],
+      "output_sha256": "10da5a49abff5e35a147f435fa8d346cf57b7d0c6fa7107529035f81acbbbeff",
+      "output_sha1": "61c8c5e55716736f24de3bafe3fec5d15b002c6a"
     },
     {
       "path": "vendor/lib64/camera/components/com.qti.node.dummydepth.so",
@@ -23339,7 +23420,16 @@
       "type": "file",
       "sha256": "574f307a33b7de01a0c2a8cd354947ecf52cd92069fb9bdb54c56c639a64480a",
       "sha1": "e1e67e2c5d4733a78f4b4960950ab0ad3375e101",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.bluetooth.audio-V5-ndk.so",
+          "new": "android.hardware.bluetooth.audio-V6-ndk.so"
+        }
+      ],
+      "output_sha256": "e45e304b8fa9e36123a0a5f89f6f25aedd216009d59a20a7fba4bd006f05711d",
+      "output_sha1": "8e21ecaf7a4df92833c0529095811a680257712c"
     },
     {
       "path": "vendor/lib64/hw/android.hardware.bluetooth.audio_sw.so",
@@ -23350,7 +23440,26 @@
       "type": "file",
       "sha256": "62e9a8094ccbbad5ec9e7e2300bbca0a01e8976eb2ed65a27b60fcafdeecd95e",
       "sha1": "770d8059b4f5d37f8ac9045730c89eba7598747e",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.audio.core-V3-ndk.so",
+          "new": "android.hardware.audio.core-V4-ndk.so"
+        },
+        {
+          "kind": "replace_needed",
+          "old": "android.media.audio.common.types-V4-ndk.so",
+          "new": "android.media.audio.common.types-V5-ndk.so"
+        },
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.bluetooth.audio-V5-ndk.so",
+          "new": "android.hardware.bluetooth.audio-V6-ndk.so"
+        }
+      ],
+      "output_sha256": "76cb0fceea0428d9fc3903aa85d1fae49f031c8b54c6f98a57aa4331906e97c2",
+      "output_sha1": "66d7ba15e77328acfd314c67e0856cbc3892b3f1"
     },
     {
       "path": "vendor/lib64/hw/android.hardware.bluetooth.lmp_event-impl-qti.so",
@@ -23416,7 +23525,16 @@
       "type": "file",
       "sha256": "b908909fbcd7eb836f568cb8348f8705b9108d81b13e1181177dd1f526dc107c",
       "sha1": "7cd34477f775e8c314e58476f1012189c1470db5",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.bluetooth.audio-V5-ndk.so",
+          "new": "android.hardware.bluetooth.audio-V6-ndk.so"
+        }
+      ],
+      "output_sha256": "99577feba494350af3544bab16379fc1d7c7054ff130ce806cbf68da405ada74",
+      "output_sha1": "fe421b6b9c7fc8b30fe19d0ec3943891a029c5e0"
     },
     {
       "path": "vendor/lib64/hw/camera.qcom.core.so",
@@ -23493,7 +23611,21 @@
       "type": "file",
       "sha256": "49591f274051afd8be5526c77b64a3aa25ac10d3048a3a96343a137e6c5989ea",
       "sha1": "78db76bd48a42538da2d1e076d89d2409c96daf5",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.audio.core-V3-ndk.so",
+          "new": "android.hardware.audio.core-V4-ndk.so"
+        },
+        {
+          "kind": "replace_needed",
+          "old": "android.media.audio.common.types-V4-ndk.so",
+          "new": "android.media.audio.common.types-V5-ndk.so"
+        }
+      ],
+      "output_sha256": "75a3769976a38032cc81a04722f7327c27bb9900adb2308728953026947854ad",
+      "output_sha1": "31556d3801c015c40d8e864fb43fa0a39b9a3a71"
     },
     {
       "path": "vendor/lib64/hw/libaudiocorehal.qti.so",
@@ -24880,7 +25012,16 @@
       "type": "file",
       "sha256": "fc46d03d0aa733f4aa725857fb1f1cbefa3cc7564c073221e9951447809a4170",
       "sha1": "90cb30b2ae9a1db78ccd620f8cf2c33ffda2461d",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "libtensorflowlite_c.so",
+          "new": "libtensorflowlite_c_vendor.so"
+        }
+      ],
+      "output_sha256": "254896d576da6be4a0b11c8b6d4641433059f7ec907ac5224e937d83605a1928",
+      "output_sha1": "d286f9ed346cbebb668df53e7da912435ccf5987"
     },
     {
       "path": "vendor/lib64/libWlanServiceJni.so",
@@ -25219,10 +25360,30 @@
         {
           "kind": "add_needed",
           "value": "libbluetooth_audio_session_aidl_shim.so"
+        },
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.audio.core-V3-ndk.so",
+          "new": "android.hardware.audio.core-V4-ndk.so"
+        },
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.audio.core.sounddose-V3-ndk.so",
+          "new": "android.hardware.audio.core.sounddose-V4-ndk.so"
+        },
+        {
+          "kind": "replace_needed",
+          "old": "android.media.audio.common.types-V4-ndk.so",
+          "new": "android.media.audio.common.types-V5-ndk.so"
+        },
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.bluetooth.audio-V5-ndk.so",
+          "new": "android.hardware.bluetooth.audio-V6-ndk.so"
         }
       ],
-      "output_sha256": "39485313f1932b0d9a258799a6a91cda2585877375ca1c025762d0193904a815",
-      "output_sha1": "aef6adfd65026f72182e0c32f85eb7f353bdfb2e"
+      "output_sha256": "2c98fcad47b87b02d0ed65bd7f6906c981bea3fb6dbb61280b6c9c379dc4175a",
+      "output_sha1": "aa72071fef3b67ee66aff6cdac5cba32765fe10f"
     },
     {
       "path": "vendor/lib64/libauto_focus_stark.so",
@@ -25321,7 +25482,16 @@
       "type": "file",
       "sha256": "17581775c5af6d2f173fbfc45b0d526fae79f9a89e7fcf9b97d11bb025641dc5",
       "sha1": "fea1ed470aa8e98a643cddf1a4389d9408a4a54d",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.bluetooth.audio-V5-ndk.so",
+          "new": "android.hardware.bluetooth.audio-V6-ndk.so"
+        }
+      ],
+      "output_sha256": "fefc4f901e9fca9a06aa20a20281ac37ea9b47c7786e35789a8f9510f8609d5a",
+      "output_sha1": "76ca85bd05d909ee8813fd09213138323b1a1714"
     },
     {
       "path": "vendor/lib64/libbluetooth_audio_session_qti.so",
@@ -25849,7 +26019,16 @@
       "type": "file",
       "sha256": "cc538eaced49e11e67e7709a810c2b89c4e71d4aaa81fa7cb3a785d436bbd67c",
       "sha1": "79caa6fbfe837b47df117b00f38e15e39cb5259d",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "libtensorflowlite_c.so",
+          "new": "libtensorflowlite_c_vendor.so"
+        }
+      ],
+      "output_sha256": "a3fc9d87461475e8b4604330fdb3503674d3e1efd6dbd5a30a58fdfb1a704c59",
+      "output_sha1": "7ed5a4a815849d5dbd9b60f99ecd12128ffbe3a1"
     },
     {
       "path": "vendor/lib64/libcdfw.so",
@@ -26762,7 +26941,16 @@
       "type": "file",
       "sha256": "cdcf34c3d772defc403ad97c972d67b38b1e9531005a1490d4433d660520500d",
       "sha1": "4f14cf06ec102b50f786445f7f10368866492019",
-      "group": "device"
+      "group": "device",
+      "transforms": [
+        {
+          "kind": "set_soname",
+          "value": "libdng_sdk_vendor.so"
+        }
+      ],
+      "output_path": "vendor/lib64/libdng_sdk_vendor.so",
+      "output_sha256": "65d056e83e0b23fc57364fff79ecff99ffb940a84235c77960c8a3f5273ddf9e",
+      "output_sha1": "b5a353194ed9df9704bcd73846702f60ecf1d301"
     },
     {
       "path": "vendor/lib64/libdolbyclstc.so",
@@ -27565,7 +27753,16 @@
       "type": "file",
       "sha256": "0d263770872e43b80e4d7b6e501e49c318bad8b3e5c14abe7a335a2826a21a9e",
       "sha1": "40d8a4afb6c9f8a8f0900b3aee863a129cdc9c30",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "libtensorflowlite_c.so",
+          "new": "libtensorflowlite_c_vendor.so"
+        }
+      ],
+      "output_sha256": "83eb76f3114c35fcf8d697758117ea54cec0dc1a56990d8b0ccfc0594ca6477b",
+      "output_sha1": "7b775930292e5f1b3c01f05258fe05e03324d048"
     },
     {
       "path": "vendor/lib64/liblistensoundmodelaidl.so",
@@ -28269,7 +28466,21 @@
       "type": "file",
       "sha256": "ce4f66588c4a8044eaddff22fbb02b4cb9e65cfe20853cdc96876f38e273fc82",
       "sha1": "fd4ff4c57bdda1ce76c858861d2ab187f61ed343",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.audio.effect-V3-ndk.so",
+          "new": "android.hardware.audio.effect-V4-ndk.so"
+        },
+        {
+          "kind": "replace_needed",
+          "old": "android.media.audio.common.types-V4-ndk.so",
+          "new": "android.media.audio.common.types-V5-ndk.so"
+        }
+      ],
+      "output_sha256": "d5ab9841289f88e7e1d403b38ced7e0f52a1c96f741e7d2fda10257076a907f7",
+      "output_sha1": "961ca91b0b9f451e551db4328cff8b41dbad8d4d"
     },
     {
       "path": "vendor/lib64/libmisoundsa_multichannel.so",
@@ -29215,7 +29426,16 @@
       "type": "file",
       "sha256": "09eb96a46c8cbe1ef3a358dab910fce2a736283607fc82e7c8e6e73ae03b3b4d",
       "sha1": "99ffc110bbbc1e27e0de1c79907c66d390cc9179",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.graphics.common-V5-ndk.so",
+          "new": "android.hardware.graphics.common-V7-ndk.so"
+        }
+      ],
+      "output_sha256": "1d1178c49e80eb3117c04539e94ff35d21f4dc1391af2dca94777bda78a7aa04",
+      "output_sha1": "97a157e053ee154635ceac1ce072d0724fa26d2c"
     },
     {
       "path": "vendor/lib64/libqcodec2_cvpfilter.so",
@@ -30136,7 +30356,21 @@
       "type": "file",
       "sha256": "4f6874f00007f8f5aee68df6ff3510c60a2a1aba47ce2c3efedf54837c418dd2",
       "sha1": "bf79ab72d259b285ecc3183233d3d7d0d175bf0c",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.audio.core-V3-ndk.so",
+          "new": "android.hardware.audio.core-V4-ndk.so"
+        },
+        {
+          "kind": "replace_needed",
+          "old": "android.media.audio.common.types-V4-ndk.so",
+          "new": "android.media.audio.common.types-V5-ndk.so"
+        }
+      ],
+      "output_sha256": "0f5b863757271d06c3906bc425e0c9ceefa670c62a1a6c9ce0f88a3f5636e30e",
+      "output_sha1": "b3f6c3e108a9eb34a827c2ccb6128388131c730a"
     },
     {
       "path": "vendor/lib64/libqtikeymaster4.so",
@@ -31192,7 +31426,21 @@
       "type": "file",
       "sha256": "a43e64605ba32b26f1fe608401b399301bdfd3acf1273f10f338309cf6f06786",
       "sha1": "f81da563f159a8c3df264825eefffeef2af23674",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.audio.effect-V3-ndk.so",
+          "new": "android.hardware.audio.effect-V4-ndk.so"
+        },
+        {
+          "kind": "replace_needed",
+          "old": "android.media.audio.common.types-V4-ndk.so",
+          "new": "android.media.audio.common.types-V5-ndk.so"
+        }
+      ],
+      "output_sha256": "24f869de176983909e014c2027ddfc71a5795104567e9ee1345d1ba8cc5bb6c4",
+      "output_sha1": "46af9b766d1a2e0754dce14ffb064d8f075429b7"
     },
     {
       "path": "vendor/lib64/libsynergy_loc_api.so",
@@ -31269,7 +31517,16 @@
       "type": "file",
       "sha256": "f8f423e87936652c6ad93f034b5254bd0474d2717bf7cb7d3503942f7f8bd507",
       "sha1": "3105de8e5da63faf983159ac2f564b9ee17e3368",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "set_soname",
+          "value": "libtensorflowlite_c_vendor.so"
+        }
+      ],
+      "output_path": "vendor/lib64/libtensorflowlite_c_vendor.so",
+      "output_sha256": "09e5d12048871cd6d29083b30f22baf6d6c01380fc5fa0eb0863f1d630f39a8a",
+      "output_sha1": "1958424f23c5ffb7e143fac899065d2fb659301e"
     },
     {
       "path": "vendor/lib64/libtestutils.so",
@@ -31577,7 +31834,21 @@
       "type": "file",
       "sha256": "0e9fd2694c9eae72e724c1c1046f02bc0121ca865dfe9290200842429660516a",
       "sha1": "9c4f6b7bf623c83ad6cdcc081deba6c96fb95de0",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.audio.core-V3-ndk.so",
+          "new": "android.hardware.audio.core-V4-ndk.so"
+        },
+        {
+          "kind": "replace_needed",
+          "old": "android.media.audio.common.types-V4-ndk.so",
+          "new": "android.media.audio.common.types-V5-ndk.so"
+        }
+      ],
+      "output_sha256": "b0d339bdf6c0b2cdcaf79040dc86df597407361084257ca1d0d42ed95121469a",
+      "output_sha1": "53950a85bdbf77cb1bcee1a11b27467990000fb2"
     },
     {
       "path": "vendor/lib64/libwfdmodulehdcpsession.so",
@@ -32545,7 +32816,21 @@
       "type": "file",
       "sha256": "d776e00e368c97c6158dec21646eafa5d738d8e4d9b671279a1c06588d1f996f",
       "sha1": "7a0facca3479bd734f37e5844442f4e508ddd414",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.audio.effect-V3-ndk.so",
+          "new": "android.hardware.audio.effect-V4-ndk.so"
+        },
+        {
+          "kind": "replace_needed",
+          "old": "android.media.audio.common.types-V4-ndk.so",
+          "new": "android.media.audio.common.types-V5-ndk.so"
+        }
+      ],
+      "output_sha256": "7d67afdaf4256ff2d371b1cbd8f3fee8a6b25c7b313771d2451c2843a240a297",
+      "output_sha1": "2679a79bf1ed969a0f6545302e24e0b733034a8b"
     },
     {
       "path": "vendor/lib64/soundfx/liblvacfsprocessingaidl.so",
@@ -32556,7 +32841,21 @@
       "type": "file",
       "sha256": "b23efda4d0574112ae8219364dde464e3bd5f1ce00cf6d8209369b23d02cd4e9",
       "sha1": "23447d329064d8642de022a0c274e52c407d4768",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.audio.effect-V3-ndk.so",
+          "new": "android.hardware.audio.effect-V4-ndk.so"
+        },
+        {
+          "kind": "replace_needed",
+          "old": "android.media.audio.common.types-V4-ndk.so",
+          "new": "android.media.audio.common.types-V5-ndk.so"
+        }
+      ],
+      "output_sha256": "76ccfd6a560c1843d0fb1bf61a5d61d5611e4fe4f35cabfbfcb7317d423adbad",
+      "output_sha1": "40e98e4403091f2a95f343be3a59baa103144d81"
     },
     {
       "path": "vendor/lib64/soundfx/libmiwndnsprocessingaidl.so",
@@ -32567,7 +32866,21 @@
       "type": "file",
       "sha256": "49a8b109b50164a09e72a6284b6cf0d91edbf63e76e307a85f2502d1035573fc",
       "sha1": "3f5ca64d86e9674fa7a827c12847ffe9b8b30ff4",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.audio.effect-V3-ndk.so",
+          "new": "android.hardware.audio.effect-V4-ndk.so"
+        },
+        {
+          "kind": "replace_needed",
+          "old": "android.media.audio.common.types-V4-ndk.so",
+          "new": "android.media.audio.common.types-V5-ndk.so"
+        }
+      ],
+      "output_sha256": "a77e7ce3de799f03c744b3e308f1fb0f13c2858d9650479f4647c5139e3777cb",
+      "output_sha1": "f0f4d6a3a8b1a29f2e4f5d8f810f0127fd1eb994"
     },
     {
       "path": "vendor/lib64/soundfx/libqcompostprocbundle.so",
@@ -32589,7 +32902,21 @@
       "type": "file",
       "sha256": "7b3ea14b1ab7e5e6a49314e6968a9c7077680b7d003df112cbc90dd8f2738e80",
       "sha1": "895c78566443395df817e1976ede28c57d1560a5",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.audio.effect-V3-ndk.so",
+          "new": "android.hardware.audio.effect-V4-ndk.so"
+        },
+        {
+          "kind": "replace_needed",
+          "old": "android.media.audio.common.types-V4-ndk.so",
+          "new": "android.media.audio.common.types-V5-ndk.so"
+        }
+      ],
+      "output_sha256": "119b12a4c264d795ad4e9bcac37aa9a3e3255dd38952935d540ea9474a23760b",
+      "output_sha1": "82da5fdfa3db3f5e4fd574174b11c57e4377d39c"
     },
     {
       "path": "vendor/lib64/soundfx/libqcomvoiceprocessing.so",
@@ -32611,7 +32938,21 @@
       "type": "file",
       "sha256": "12be3984046281b1faba4af1b9e79f05e6ba259223f80b0f5fe715432d3d86c9",
       "sha1": "4f5a1a771e32707902085744f00995781abb9662",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.audio.effect-V3-ndk.so",
+          "new": "android.hardware.audio.effect-V4-ndk.so"
+        },
+        {
+          "kind": "replace_needed",
+          "old": "android.media.audio.common.types-V4-ndk.so",
+          "new": "android.media.audio.common.types-V5-ndk.so"
+        }
+      ],
+      "output_sha256": "c7a4fee2af09e588350f69ca21e2fd3f11b6528f8bb8994e7f935744b8b7ddf1",
+      "output_sha1": "9116920ccbfc797142bf6222efd6abb2f478f06f"
     },
     {
       "path": "vendor/lib64/soundfx/libspatializer_aosp_aidl_sve.so",
@@ -32622,7 +32963,26 @@
       "type": "file",
       "sha256": "67f186c2ac5686aa543abcb54fe9ed0e94a943d25a01ccb7df16eab787996c90",
       "sha1": "249086ee297b6fdce77d8d119abe896a2657fe02",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.audio.core-V2-ndk.so",
+          "new": "android.hardware.audio.core-V4-ndk.so"
+        },
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.audio.effect-V3-ndk.so",
+          "new": "android.hardware.audio.effect-V4-ndk.so"
+        },
+        {
+          "kind": "replace_needed",
+          "old": "android.media.audio.common.types-V4-ndk.so",
+          "new": "android.media.audio.common.types-V5-ndk.so"
+        }
+      ],
+      "output_sha256": "24e3d48b0c7e76ed84e30ba6c43069bb73bdd52c0ae51de433f8382c977add55",
+      "output_sha1": "b8e1c192fc2ca3d667ce2187358488b08516ff3d"
     },
     {
       "path": "vendor/lib64/soundfx/libswgamedapaidl.so",
@@ -32633,7 +32993,21 @@
       "type": "file",
       "sha256": "026ec54805ce7ce18aab3fddf79863e3c1ffb7754bc868af155bfcb9f735108b",
       "sha1": "88d70d80e64ccf0c1464ad8675cec8f910a0967c",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.audio.effect-V3-ndk.so",
+          "new": "android.hardware.audio.effect-V4-ndk.so"
+        },
+        {
+          "kind": "replace_needed",
+          "old": "android.media.audio.common.types-V4-ndk.so",
+          "new": "android.media.audio.common.types-V5-ndk.so"
+        }
+      ],
+      "output_sha256": "2300bb24b0b3a0d2e231cdecf1b9625728fef398822d405582dce79a35d7b758",
+      "output_sha1": "17f58e2ce2d871b3a9c91a599eeb2bc83875e04f"
     },
     {
       "path": "vendor/lib64/soundfx/libswspatializeraidl.so",
@@ -32655,7 +33029,21 @@
       "type": "file",
       "sha256": "5f77bcfac04ce4a734e028735402e53b8dde2dbdfd0fa3915ac9eda105a9713b",
       "sha1": "1c8ae5e426a4f14927f2b9c52b9c3dece4746681",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.audio.effect-V3-ndk.so",
+          "new": "android.hardware.audio.effect-V4-ndk.so"
+        },
+        {
+          "kind": "replace_needed",
+          "old": "android.media.audio.common.types-V4-ndk.so",
+          "new": "android.media.audio.common.types-V5-ndk.so"
+        }
+      ],
+      "output_sha256": "2d72c4e842c9e42d838cd98434291189b2364919f0dc6d46f0dbe970a77983d9",
+      "output_sha1": "a066d5f83c65060d6449a8b041b9e8076a60b93f"
     },
     {
       "path": "vendor/lib64/sva_plugin.so",
@@ -33029,7 +33417,21 @@
       "type": "file",
       "sha256": "3a1b959477370be4df2da2ef8b7120f8230a5faf79b0111d8b996a99e6230633",
       "sha1": "4744badd7230bc29ab1bba3a5c03afe68d9aef4e",
-      "group": "device"
+      "group": "device",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.graphics.allocator-V1-ndk.so",
+          "new": "android.hardware.graphics.allocator-V2-ndk.so"
+        },
+        {
+          "kind": "replace_needed",
+          "old": "vendor.qti.hardware.camera.offlinecamera-V2-ndk.so",
+          "new": "vendor.qti.hardware.camera.offlinecamera-V3-ndk.so"
+        }
+      ],
+      "output_sha256": "8c979f380339a26aa5c73b1c29a7ad3b064228d49983b5a20f39c5ceec7d9276",
+      "output_sha1": "30f14dc0dde678baedc3c51a886faffe7cc25824"
     },
     {
       "path": "vendor/lib64/vendor.qti.hardware.capabilityconfigstore-V1-ndk.so",
@@ -34129,7 +34531,16 @@
       "type": "file",
       "sha256": "09d66d06c5846921cd4976deab1c65d79f2c02f41e4e119636ee27d9fd083e0d",
       "sha1": "01ac25fad92343d6dc23d31b01d3954a3a134aec",
-      "group": "device"
+      "group": "device",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.camera.device-V1-ndk.so",
+          "new": "android.hardware.camera.device-V3-ndk.so"
+        }
+      ],
+      "output_sha256": "47a2ed20cb7b33d7e443212c5772ab70aaa1e0076a53c901458eb67536a03d1c",
+      "output_sha1": "cdb5660dab457cb41c5f6e13dc3f71080ba336d1"
     },
     {
       "path": "vendor/lib64/vendor.xiaomi.hardware.camera.injection-client.so",
@@ -34140,7 +34551,16 @@
       "type": "file",
       "sha256": "41c4f7f82c32a3beba07d91b46421a536d19f8b80315d2f40b613910c3a11210",
       "sha1": "b34758b0819a234b8993ac2a15869553be6f61ab",
-      "group": "device"
+      "group": "device",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.camera.device-V1-ndk.so",
+          "new": "android.hardware.camera.device-V3-ndk.so"
+        }
+      ],
+      "output_sha256": "95c8a79bf36e92977d22ff667160563fa445feea003973f189722b175433dc20",
+      "output_sha1": "f1375f15bf48f2a7f70b0148370d983ef05838b9"
     },
     {
       "path": "vendor/lib64/vendor.xiaomi.hardware.camera.injection-service.so",
@@ -34151,7 +34571,16 @@
       "type": "file",
       "sha256": "62dc75b9c40548e4b4d5a2d7914b59de848ad98290e90e171e2772e17cea28e8",
       "sha1": "bc63543799572249f6d010913a62c485acdb4c2e",
-      "group": "device"
+      "group": "device",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.camera.device-V1-ndk.so",
+          "new": "android.hardware.camera.device-V3-ndk.so"
+        }
+      ],
+      "output_sha256": "d41c967f94d66127a4e8982d2107a3d0a07ac08c803e136b9f7c6f87aec4bdab",
+      "output_sha1": "492eeb8d401ee89b79f7fccec4c376ae3f613a6e"
     },
     {
       "path": "vendor/lib64/vendor.xiaomi.hardware.camera.mivimessage-V1-impl.so",
@@ -34544,12 +34973,6 @@
     "vendor/lib64/hw/libaudioeffecthal.qti.so": [
       "DISABLE_DEPS",
       "REQUIRED=audioeffectservice_qti.xml"
-    ],
-    "vendor/lib64/libtensorflowlite_c.so": [
-      "MODULE_SUFFIX=_vendor"
-    ],
-    "vendor/lib64/libdng_sdk.so": [
-      "MODULE_SUFFIX=_vendor"
     ],
     "vendor/lib64/soundfx/libqcomvoiceprocessing.so": [
       "DISABLE_DEPS"

@@ -110,11 +110,11 @@ vendor/etc/vintf/manifest/Manifest_IPAL.xml|7734c947c71ef195fe92f61186e1cd018c81
 vendor/etc/vintf/manifest/soundtrigger.qti.xml|599ee48933740576da2b69643ff6bc55a588ed43
 vendor/lib64/customva_plugin.so|e3b6cda48c3039fa40775b235ac2eeb5333193bb
 vendor/lib64/hotword_plugin.so|843fcdbd8d551134a8de171d3c82a41d1581335d
-vendor/lib64/hw/libaudiocorehal.default.so;REQUIRED=manifest_audiocorehal_default.xml|78db76bd48a42538da2d1e076d89d2409c96daf5
+vendor/lib64/hw/libaudiocorehal.default.so;REQUIRED=manifest_audiocorehal_default.xml|31556d3801c015c40d8e864fb43fa0a39b9a3a71
 vendor/lib64/hw/libaudiocorehal.qti.so;DISABLE_DEPS|4b4ad54d0921a8289ef2841c2b5d0266815c848d
 vendor/lib64/hw/libaudioeffecthal.qti.so;DISABLE_DEPS;REQUIRED=audioeffectservice_qti.xml|dee6bc79f1722b59b42f5167b6374be901e9c6ea
 vendor/lib64/hw/libsoundtriggerhal.qti.so|a3682473956b2e075b6644594e63a08a2eab23a2
-vendor/lib64/libVoiceSdk.so|90cb30b2ae9a1db78ccd620f8cf2c33ffda2461d
+vendor/lib64/libVoiceSdk.so|d286f9ed346cbebb668df53e7da912435ccf5987
 vendor/lib64/lib_lvacfs.so|2bc09e58593e572773d8eda5952edaa4b7b5283f
 vendor/lib64/libadm.so|de87435d5db97a3e1a4970b27c79ccb74803dd63
 vendor/lib64/libar-acdb.so|094037888592411f077847a6fda12fe820ad9d21
@@ -128,7 +128,7 @@ vendor/lib64/libaudiochargerlistener.so|920cda71cd82cc5d64bc020bf39253f8bdaaa344
 vendor/lib64/libaudiocloudctrl.so|a8cc0af1f93a977ef23ca8e2a11586e41156b04f
 vendor/lib64/libaudiofeaturestats.so|eb8b38e894269a940b20694f1ec3eb9739d30bf0
 vendor/lib64/libaudioplatformconverter.qti.so;DISABLE_DEPS|191cdcf64805297653c2f05b524c7ad9be24fe26
-vendor/lib64/libaudioserviceexampleimpl.so|aef6adfd65026f72182e0c32f85eb7f353bdfb2e
+vendor/lib64/libaudioserviceexampleimpl.so|aa72071fef3b67ee66aff6cdac5cba32765fe10f
 vendor/lib64/libav_lvacfsencoder.so|8775737c0ce5da021dc8ffd59e0552a0af389e03
 vendor/lib64/libav_miwnsencoder.so|ba8d82d12178b60ad2eb971022cef2e86705daa2
 vendor/lib64/libbatterylistener.so|16f5a3131b63617a23529230c584df3c18bf5f5d
@@ -136,7 +136,7 @@ vendor/lib64/libc++_shared.so|743c7147d63d54849f4ab442a72876fbfde526ea
 vendor/lib64/libcapiv2svacnnvendor.so|c6966e79a4194b90d96d112948070cd70b013ec4
 vendor/lib64/libcapiv2svarnnvendor.so|abf3e6cd544b257d1368799a9617c6b712a5da7f
 vendor/lib64/libcapiv2udk7vendor.so|97f9748b8dea0e11f93deb7782ffdee0aded518e
-vendor/lib64/libcapiv2uvvendor.so|79caa6fbfe837b47df117b00f38e15e39cb5259d
+vendor/lib64/libcapiv2uvvendor.so|7ed5a4a815849d5dbd9b60f99ecd12128ffbe3a1
 vendor/lib64/libdev_bt.so|00089e091c4bc567d2146e89dacd366dd3fde5ee
 vendor/lib64/libdev_display.so|843def5cef356b6099171c02c2501d80fd9fd0e6
 vendor/lib64/libdev_dummy.so|31c776a028848b9825aa373cd39dc40f165eee72
@@ -167,14 +167,14 @@ vendor/lib64/libmis6.so|39cce8ca39e24ee0b6e30d63a7a7c24ccb9238c6
 vendor/lib64/libmisfpsop.so|ca21145b226d575bd00f678a850d4158efe74cfb
 vendor/lib64/libmisight.so|3a51dbf0d77b7414628b40bac461d81dafa6ae6c
 vendor/lib64/libmisops.so|6e72ab47b1d8ca093211b7684d24795a1f6ba3f3
-vendor/lib64/libmisoundfx_aosp_aidl_ext.so;SYMLINK=vendor/lib64/soundfx/libmisoundfx_aosp_aidl.so|fd4ff4c57bdda1ce76c858861d2ab187f61ed343
+vendor/lib64/libmisoundfx_aosp_aidl_ext.so;SYMLINK=vendor/lib64/soundfx/libmisoundfx_aosp_aidl.so|961ca91b0b9f451e551db4328cff8b41dbad8d4d
 vendor/lib64/libmisoundsa_multichannel.so|82285d23a3d42af0b930c3aff294a6b13d1796e7
 vendor/lib64/libmisoundsa_sve.so|36124558728b184a93a5a108a5280865ce981098
 vendor/lib64/libpal_net_if.so|9a2c6ca67a6490371300646d504100b74218d750
 vendor/lib64/libpal_sounddose.so|f12c9f8d592683a53a57e00b36fe1810f4a554cb
 vendor/lib64/libpalclient.so|a09b1e8efbb97b880047d91ea1e10a428ba8cbc3
 vendor/lib64/libqasr.so|c8a8a5ee01ae2a6bff760095230d66575cf875e0
-vendor/lib64/libqtigefar.so|bf79ab72d259b285ecc3183233d3d7d0d175bf0c
+vendor/lib64/libqtigefar.so|b3f6c3e108a9eb34a827c2ccb6128388131c730a
 vendor/lib64/libsession_agm.so|a692aa09f10293b1d5abee5f3e5120e733b2600a
 vendor/lib64/libsession_ar.so|5e9d21ec2cec7c4128ecc9ce6de041d19a3ee911
 vendor/lib64/libsession_compress.so|a70b5c8e4c155cc236906208e64d4fa1fa278a1d
@@ -199,7 +199,7 @@ vendor/lib64/libstream_sensorpcmdata.so|e3b9ab47663ebcd519fde561b73ae68914f270b9
 vendor/lib64/libstream_sensorrenderer.so|4f7dbc0eaf9965fa260d50072837ecf2c025e73c
 vendor/lib64/libstream_soundtrigger.so|b3d88ab6f645c7c76392d7080e597df8b364fc37
 vendor/lib64/libstream_ultrasound.so|9ceb120a67901fe80fb5a9cfb31e31a61cf15e10
-vendor/lib64/libtensorflowlite_c.so;MODULE_SUFFIX=_vendor|3105de8e5da63faf983159ac2f564b9ee17e3368
+vendor/lib64/libtensorflowlite_c.so:vendor/lib64/libtensorflowlite_c_vendor.so|1958424f23c5ffb7e143fac899065d2fb659301e
 vendor/lib64/libtiantongpal.so|0e0a84187fb912f8150c22705ca90d25a3962897
 vendor/lib64/libvui_utils.so|a48d3ec51932f89b27656332901b27f4ff68d61d
 vendor/lib64/libxlog.so|0b770a682d32a65aea9ca1b41fd566f3b7519e36
@@ -226,17 +226,17 @@ vendor/etc/usecaseKvManager.xml|50d9e78665eeb5f0a3a60a9cd31968a238aeb5e3
 
 # Audio FX modules
 vendor/lib64/soundfx/libdlbvolaidl.so;DISABLE_DEPS|a709984a5031391a7fb3667d6e69da873bf764fd
-vendor/lib64/soundfx/libhwdapaidl.so|7a0facca3479bd734f37e5844442f4e508ddd414
-vendor/lib64/soundfx/liblvacfsprocessingaidl.so|23447d329064d8642de022a0c274e52c407d4768
-vendor/lib64/soundfx/libmiwndnsprocessingaidl.so|3f5ca64d86e9674fa7a827c12847ffe9b8b30ff4
+vendor/lib64/soundfx/libhwdapaidl.so|2679a79bf1ed969a0f6545302e24e0b733034a8b
+vendor/lib64/soundfx/liblvacfsprocessingaidl.so|40e98e4403091f2a95f343be3a59baa103144d81
+vendor/lib64/soundfx/libmiwndnsprocessingaidl.so|f0f4d6a3a8b1a29f2e4f5d8f810f0127fd1eb994
 vendor/lib64/soundfx/libqcompostprocbundle.so;DISABLE_DEPS|e3827c41905484c2d81c0938baef73d4b0ed37d3
-vendor/lib64/soundfx/libqcomvisualizer.so|895c78566443395df817e1976ede28c57d1560a5
+vendor/lib64/soundfx/libqcomvisualizer.so|82da5fdfa3db3f5e4fd574174b11c57e4377d39c
 vendor/lib64/soundfx/libqcomvoiceprocessing.so;DISABLE_DEPS|cd9754650cf27eb6e228e6723f4fd936533a92d8
-vendor/lib64/soundfx/libquasar.so|4f5a1a771e32707902085744f00995781abb9662
-vendor/lib64/soundfx/libspatializer_aosp_aidl_sve.so|249086ee297b6fdce77d8d119abe896a2657fe02
-vendor/lib64/soundfx/libswgamedapaidl.so|88d70d80e64ccf0c1464ad8675cec8f910a0967c
+vendor/lib64/soundfx/libquasar.so|9116920ccbfc797142bf6222efd6abb2f478f06f
+vendor/lib64/soundfx/libspatializer_aosp_aidl_sve.so|b8e1c192fc2ca3d667ce2187358488b08516ff3d
+vendor/lib64/soundfx/libswgamedapaidl.so|17f58e2ce2d871b3a9c91a599eeb2bc83875e04f
 vendor/lib64/soundfx/libswspatializeraidl.so;DISABLE_DEPS|f04f3e2532db77c52ec19d8f7b94b90d6a6212cf
-vendor/lib64/soundfx/libvolumelistener.so|1c8ae5e426a4f14927f2b9c52b9c3dece4746681
+vendor/lib64/soundfx/libvolumelistener.so|a066d5f83c65060d6449a8b041b9e8076a60b93f
 
 # Batterysecret
 vendor/bin/batterysecret|2cbe8c43dbc70743f7d26d9141bf4384862f12fe
@@ -255,14 +255,14 @@ vendor/etc/vintf/manifest/fm_hci.xml|e3a23022b2d5cf3397d5b5167d5700f09bec2845
 vendor/etc/vintf/manifest/manifest_btaudiocoreservices_qti.xml|898a2e48e881cfbbe841138cdaf60887788a0751
 vendor/etc/vintf/manifest/vendor.qti.hardware.bluetooth.btavsprovider.xml|59cf4e8f63d291c13ee964bcc1a1d27caadd4428
 vendor/etc/vintf/manifest/vendor.qti.hardware.bluetooth.xpanprovider.xml|82efbfbaac6e2fbbafa3a6f1750b68589b757ecd
-vendor/lib64/btaudio_offload_if.so|83cf382dee6da560c9aec6e8960acc5815ee1fb8
-vendor/lib64/hw/android.hardware.bluetooth.audio-impl-qti.so|e1e67e2c5d4733a78f4b4960950ab0ad3375e101
-vendor/lib64/hw/android.hardware.bluetooth.audio_sw.so|770d8059b4f5d37f8ac9045730c89eba7598747e
+vendor/lib64/btaudio_offload_if.so|445462106d82b62ff8d71c984df19f9fde76f188
+vendor/lib64/hw/android.hardware.bluetooth.audio-impl-qti.so|8e21ecaf7a4df92833c0529095811a680257712c
+vendor/lib64/hw/android.hardware.bluetooth.audio_sw.so|66d7ba15e77328acfd314c67e0856cbc3892b3f1
 vendor/lib64/hw/android.hardware.bluetooth.lmp_event-impl-qti.so|335efe2a376e807ab0a3dad4152762d3850a7ba6
 vendor/lib64/hw/android.hardware.bluetooth.ranging@aidl-impl-qti.so|a90b801c743e5486b47c4da40d212002895deffb
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|31b4042b676c403c82b1e5f9925c5ce8c4391a44
 vendor/lib64/hw/android.hardware.bluetooth@aidl-impl-qti.so|7c558d0affd238c67cbf33190235dc05a0aabd95
-vendor/lib64/hw/audio.bluetooth_qti.default.so|7cd34477f775e8c314e58476f1012189c1470db5
+vendor/lib64/hw/audio.bluetooth_qti.default.so|fe421b6b9c7fc8b30fe19d0ec3943891a029c5e0
 vendor/lib64/hw/libbcs.so|a053c789eeced59af0f4fdc3aa9812a5491ff7f5
 vendor/lib64/hw/mbedtls_qti.so|60bf983ad6f39aead51c1b1f1a1bb1b3693d5dcf
 vendor/lib64/hw/vendor.qti.hardware.bluetooth.btavsprovider-impl-qti.so|3f0e480a34dbf343b491a0519eb08bb00b01329f
@@ -272,7 +272,7 @@ vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@aidl-impl.so|adeb3171ac2bf3f71
 vendor/lib64/hw/vendor.qti.hardware.bttpi-impl.so|569d3a227fb1e05a02365e0ee0af841b5d4c0119
 vendor/lib64/lib_bt_lhdc.so|531d3e247aef6008fa3cf99a694d1879be3ffbfb
 vendor/lib64/lib_bt_mihc.so|4c26055dbe7ce20c0675d0ec112ed5863d27454b
-vendor/lib64/libbluetooth_audio_session_aidl_qti.so|fea1ed470aa8e98a643cddf1a4389d9408a4a54d
+vendor/lib64/libbluetooth_audio_session_aidl_qti.so|76ca85bd05d909ee8813fd09213138323b1a1714
 vendor/lib64/libbluetooth_audio_session_qti.so|f6a331a30471916c6376c3d8a44b5e9ec9811dc8
 vendor/lib64/libbluetooth_audio_session_qti_2_1.so|48fa0c271b59303d0c14eba5805797056c32d8e7
 vendor/lib64/libbt-hidlclient.so|5d679c923c917a335dd906728bed49f0eefe8d09
@@ -309,7 +309,7 @@ vendor/lib64/libsdsprpc.so|2600282d31955f6821211bc4b4d46d58234d7204
 vendor/lib64/libsysmon_cdsp_skel.so|a9ad0a6adfaf8ed1824135d2b98ce79f907da418
 
 # CIT Sensor
-odm/bin/hw/vendor.xiaomi.sensor.citsensorservice.aidl|a5662978d06820e8c5d9777f508ddc3effeb9969
+odm/bin/hw/vendor.xiaomi.sensor.citsensorservice.aidl|ad6f47ab4a0b9dc273d6ec1936e9bb6a19b95862
 odm/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc|75ab479e493aed8b4ab038fab96e464a50fa3fd2
 odm/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice.aidl.xml|2c4d79676af4c7c0367ae1917badca0ba518efea
 vendor/lib64/vendor.xiaomi.sensor.citsensorservice-V1-ndk.so|c0f783af0c8d0c5067d7f4969fa8e1280fd2f9a4
@@ -591,7 +591,7 @@ vendor/lib64/libhdrdynamicootf.so|f3522ade93c714691b7db1e610c22f2835855967
 vendor/lib64/libhdrvivid.so|a74a2d7d287c14f5adc826c0cf04403923a93dd0
 
 # Display (HWC)
-vendor/bin/hw/vendor.qti.hardware.display.composer-service|5f89ee36bdb5925dabe1236674ecb6989e5161ea
+vendor/bin/hw/vendor.qti.hardware.display.composer-service|fadbe249085688f0eb3ac51110ffc0a84d3acfe1
 vendor/bin/qdcmss|f078f9a78b5c91fe27f04b585dcfe28be253c2ba
 vendor/etc/init/qdcmss.rc|53d78d686678c4f923a9ec4ace7d4d3575b13788
 vendor/etc/init/vendor.qti.hardware.display.composer-service.rc|e1f1950f4d2c45fd48045a26f41a4241a3a60244
@@ -756,7 +756,7 @@ vendor/lib64/libdolbyeglcore.so|291aa879686c5fd3a2fe85abb8b83a9dfd299df9
 vendor/lib64/libdolbyottcameracontrol.so|400412300e661e9edd47d015c198585ad925f6e2
 vendor/lib64/libqcodec2_dolbydecoderfilter.so|845e364aa03125a6b8497d0bc17b25a62b22a264
 vendor/lib64/libspatializerparamstorage.so|98f5b7bea9406d6b0e06584477d6319d3688a822
-vendor/lib64/libswspatializeraidl_ext.so|f81da563f159a8c3df264825eefffeef2af23674
+vendor/lib64/libswspatializeraidl_ext.so|46af9b766d1a2e0754dce14ffb064d8f075429b7
 vendor/lib64/vendor.dolby.dms-V1-ndk.so|7148146c8de5e47548d853f53b1f25910dac44bd
 vendor/lib64/vendor.dolby.hardware.dms@2.0.so|a3dd6b957eba371ad83fd0048fe137728604bbed
 
@@ -1037,7 +1037,7 @@ vendor/lib64/libeai_fixed.so|035f131425454f500ee8be1469ff2fbe8b115a17
 vendor/lib64/libeai_float.so|56a52a3c25defd504bcc8de3315aa558069bcbfd
 vendor/lib64/libfmpal.so|6320b165ad60eb0fdb00e0e49818e646af32c259
 vendor/lib64/libhfp_pal.so|62574e834bf6a233bf378edecfac1c6752cc852f
-vendor/lib64/liblistensoundmodel2vendor.so|40d8a4afb6c9f8a8f0900b3aee863a129cdc9c30
+vendor/lib64/liblistensoundmodel2vendor.so|7b775930292e5f1b3c01f05258fe05e03324d048
 vendor/lib64/liblistensoundmodelaidl.so|b22c01a8a26c51c3010044669a4e3688687accfb
 vendor/lib64/vendor.qti.hardware.ListenSoundModelAidl-V1-ndk.so|604ffcc5f48e9f321a58a37c5745e17cdae2400b
 vendor/lib64/vendor.qti.hardware.ListenSoundModelAidl-V2-ndk.so|28dd67553f1ae8a2e9a1f384886c5eef78562b19
@@ -1047,8 +1047,8 @@ odm/lib64/vendor.xiaomi.hardware.mediaeventgatherservice-V1-ndk.so|39619cc7b1369
 system_ext/lib64/libmmosal.so|9e67e6fb7e29c9b05bbd6259058c0d8474a290ae
 system_ext/lib64/libmmparser_lite.so|6886957eda7038e235579f669694ba396898ed73
 vendor/bin/hw/qconfigservice|1483d8c4e5b99efc21c34dc3996d0afaaf49bd67
-vendor/bin/hw/vendor.qti.media.c2@1.0-service|9b5a80450bd192fff8187315259a871fc22db3af
-vendor/bin/hw/vendor.qti.media.c2audio@1.0-service|7cf939fb87db5225ed4a4b5d80e3e31b476ed90e
+vendor/bin/hw/vendor.qti.media.c2@1.0-service|97d76bcffb909ae92bf8f542c6208944e533de97
+vendor/bin/hw/vendor.qti.media.c2audio@1.0-service|3c5457be1b8d94af435e2535f25ad9cc39e75897
 vendor/bin/init.qti.media.sh|a74e4d987e7f100c2b8307160a7b33494666603d
 vendor/etc/init/init.qti.media.rc|fee08dfb120803ed85e8f7a130762a90cc133bb2
 vendor/etc/init/qconfig.rc|101403975de90b136209eff6ef055ccb277de403
@@ -1108,7 +1108,7 @@ vendor/lib64/libqc2audio_utils.so|391e8c8e0d3ff9fe02e75d0c4b1c8c5f46a6fcee
 vendor/lib64/libqc2vppfilter.so|286bb12da161dbf11390cc0e84ae20efefe84aee
 vendor/lib64/libqcodec2_base.so|37d228d55552864792db296ede89d16ae2081442
 vendor/lib64/libqcodec2_basecodec.so|44159ad501e4e01c6a6652ab12f53b0119d49a49
-vendor/lib64/libqcodec2_core.so|99ffc110bbbc1e27e0de1c79907c66d390cc9179
+vendor/lib64/libqcodec2_core.so|97a157e053ee154635ceac1ce072d0724fa26d2c
 vendor/lib64/libqcodec2_cvpfilter.so|a58f9dc25e32dd6aa14c0f02be665cef5ec06150
 vendor/lib64/libqcodec2_filterbase.so|039f5d7665ac53225c10ccd9a1c8e62fdfdab291
 vendor/lib64/libqcodec2_hooks.so|a79412e66f4734ed1dd05ec5b15f4b410b59d354
@@ -1847,7 +1847,7 @@ vendor/lib64/libvideoutils.so|0f4960a33a805d62206bdb43d75b6a9c0056e0a2
 
 # WiFi
 vendor/bin/cnss-daemon|29996c97cb10cc648d3043fe4fc39f0cc074bb6d
-vendor/bin/wifi_qos_daemon|d3e3459d7bae45b6889cf0a0b837e9e4c2727baa
+vendor/bin/wifi_qos_daemon|37b8ab5929ae04a4763cb8e6543ae9ea9c9e4523
 vendor/etc/init/init.vendor.wlan.rc|cf8dbc3a20454932cc79d0270689fc4926401449
 vendor/etc/wifi/models/qcom_game_latency_predict.dlc|b2cfa8f0dacf66c915f2574684f93720a69af666
 vendor/etc/wifi/models/qcom_game_latency_predict_2.dlc|2e116ad532053091662b7f3277ca371938f3802c
@@ -1875,7 +1875,7 @@ system_ext/lib64/libwfdmmsink.so|025bfc9520f05f461bf1efd19e49a2f5d7f660f0
 system_ext/lib64/libwfdmmsrc_system.so|2d9091a9eb7e88a69f081205c1117b2e3286f4d9
 system_ext/lib64/libwfdnative.so;SYMLINK=system_ext/priv-app/WfdService/lib/arm64/libwfdnative.so|31d003a63ef42573ff0675eb42f7eec25f2a2ee9
 system_ext/lib64/libwfdrtsp.so|debde37cd38d3a4bfc29b87f49602c59d8e8b220
-system_ext/lib64/libwfdservice.so|ba23da3a50e6314f512b8a66f3d1233689928548
+system_ext/lib64/libwfdservice.so|b826458a33774e43a424bc07ddd9889b08dd4550
 system_ext/lib64/libwfdsinksm.so|d749dbe9e57fd6635528f22df1660e6938cb68f7
 system_ext/lib64/libwfduibcinterface.so|ed337eff2a5b32d90ce468e2486e5db86518abbc
 system_ext/lib64/libwfduibcsink.so|436e98e2b243761055f39561078960d94b4cfa39
@@ -1910,7 +1910,7 @@ vendor/lib64/libwfdhdcpcp.so|afa22556627f073b2eae02c12a78f560c747c693
 vendor/lib64/libwfdhdcpservice_proprietary.so|2fb835b545c9a8f1f602abba2cdd27e03bf4ebd2
 vendor/lib64/libwfdmminterface_proprietary.so|d1df232a8dc81e5f4ce4290a19479a37e5dc47bd
 vendor/lib64/libwfdmmservice_proprietary.so|88daa462dff19ee9c70e40509e0e8eddff24621f
-vendor/lib64/libwfdmmsrc_proprietary.so|9c4f6b7bf623c83ad6cdcc081deba6c96fb95de0
+vendor/lib64/libwfdmmsrc_proprietary.so|53950a85bdbf77cb1bcee1a11b27467990000fb2
 vendor/lib64/libwfdmodulehdcpsession.so|4c174b98d673909e7effa84a62a728797eb39fae
 vendor/lib64/libwfdrtsp_vendor.so|48b612dc6b31dd19c1732a3d7e77ab6abd83ce0f
 vendor/lib64/libwfdsessionmodule.so|f99afaaa5e98b8bdc13184ce847100518d91951f

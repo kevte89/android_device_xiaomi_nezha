@@ -75,16 +75,21 @@ def reviewed_files():
     # The lists must match the separately SHA-256-pinned selection exactly.
     for group, filename in [('device', 'proprietary-files.txt'), ('common', 'proprietary-files-common.txt')]:
         expected = {e['path']: e.get('output_sha1', e['sha1']) for e in manifest['files'] if e['group'] == group}
+        destinations = {e['path']: e.get('output_path', e['path']) for e in manifest['files'] if e['group'] == group}
         actual = {}
         for line in (DEVICE / filename).read_text().splitlines():
             if not line.strip() or line.startswith('#'):
                 continue
             spec, sha1 = line.split('|')
             path, *flags = spec.split(';')
+            source_path, separator, output_path = path.partition(':')
+            if (output_path if separator else source_path) != destinations.get(source_path):
+                raise RuntimeError('Unreviewed destination: ' + path)
+            path = source_path
             # Only metadata separately justified by inspected stock and build rules.
             if flags != manifest['build_metadata'].get(path, []):
                 raise RuntimeError('Unreviewed list option: ' + line)
-            if ':' in path or path in actual:
+            if path in actual:
                 raise RuntimeError('Alias or duplicate not reviewed: ' + path)
             actual[path] = sha1
         if actual != expected:
@@ -138,7 +143,10 @@ def run(regenerate=False):
             raise RuntimeError('Source escapes verified partition: ' + str(source))
         tree = 'nezha' if entry['group'] == 'device' else 'sm8850-common'
         vendor = ROOT / 'vendor/xiaomi' / tree
-        destination = vendor / 'proprietary' / entry['path']
+        output_path = entry.get('output_path', entry['path'])
+        if Path(output_path).is_absolute() or '..' in Path(output_path).parts or output_path.split('/', 1)[0] != part:
+            raise RuntimeError('Unapproved output path: ' + output_path)
+        destination = vendor / 'proprietary' / output_path
         if not destination.resolve().is_relative_to(vendor.resolve()):
             raise RuntimeError('Destination escapes vendor tree')
         expected_hash = entry.get('output_sha256', entry['sha256'])
