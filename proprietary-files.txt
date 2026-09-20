@@ -588,7 +588,7 @@ vendor/lib64/libcom.xiaomi.sensorpolicy.so|b1bbc1ab048afda21509b2dc1a0752a199f34
 vendor/lib64/libcom.xiaomi.signaltrigger.so|de7c81409de09883fd63986b34cfac0b6b4467a4
 vendor/lib64/libcom.xiaomi.threadpool.so|a9ca16777d1b7992e026042fc9cf67635dc3e4ea
 vendor/lib64/libcom.xiaomi.timer.so|a767c3eaa0d9000480fc0c6a5c0dbfd50c0c1fcb
-vendor/lib64/libdng_sdk.so|4f14cf06ec102b50f786445f7f10368866492019
+vendor/lib64/libdng_sdk.so;MODULE_SUFFIX=_vendor|4f14cf06ec102b50f786445f7f10368866492019
 vendor/lib64/libdscaalgo.so|95a339da7121f7e2e155e1f54951738b9994f7bf
 vendor/lib64/libecoengine.so|a2b431fe12a2866877309ac656e02a285e82c71c
 vendor/lib64/libfastmessage.so|2450729e6f60d39dc0fd6bce5e351e1e59323169
@@ -1419,3 +1419,18 @@ odm/firmware/6_ringTone1_P_RTP.bin|5c22b3d842b5e3abd66dc29b182d3a8aadabc5b1
 odm/firmware/7_ringTone2_P_RTP.bin|e02c545e3615e50686ce93a0123df8e3ab65480f
 odm/firmware/8_ringTone3_P_RTP.bin|6cbd0fe3ca65ab7b2de566832ce1664d3ce1ad45
 odm/firmware/9_ringTone4_P_RTP.bin|0184510038acd1d790a16a3f206c30dcba776e13
+
+# Nezha libawbcore dependency from OS3.0.309.0.WPACNXM
+odm/lib64/libaiawb.so|bf94ab21f62639a6e51b3840d95016e11ffa7489
+
+# Nezha displayfeature dependency
+odm/lib64/libdynamicelvss.so|0e9b69da8b2c2f73154bff6c6ee04959cc366ddb
+
+# Nezha audio dependency
+vendor/lib64/libultrasound_notify.so|400d3f223efa80d6e7ab7b0c265d112848a1e2d3
+
+# Nezha camera dependency
+vendor/lib64/liblegendmsg.so|f062a8ce6c79e297925cc6b5895957612e153a1c
+
+# Nezha camera dependency (vendor rather than Myron odm)
+vendor/lib64/libvega_common.so|f25ec402c576e19d0cb95d52749120367d9ec34b

@@ -22,6 +22,8 @@ STOCK = Path('/home/kevte89/android/stock/nezha_a16_cn_309/super_extracted')
 sys.path.insert(0, str(ROOT / 'tools/extract-utils'))
 from extract_utils.main import ExtractUtils, ExtractUtilsModule
 from extract_utils.module import ProprietaryFile
+from extract_utils.fixups_lib import lib_fixup_vendorcompat, libs_proto_21_12
+from extract_utils.fixups_lib import libs_clang_rt_ubsan, lib_fixup_remove_arch_suffix
 
 namespace_imports = [
     'device/xiaomi/sm8850-common',
@@ -36,7 +38,11 @@ def vendor_partition_alias(lib, partition, *args, **kwargs):
     return lib + '_vendor' if partition in ('vendor', 'odm') else None
 
 # Build dependency aliases; separately pinned transforms cover reviewed ELF changes.
-lib_fixups = {tuple(BUILD_ALIASES): vendor_partition_alias}
+lib_fixups = {
+    libs_clang_rt_ubsan: lib_fixup_remove_arch_suffix,
+    tuple(BUILD_ALIASES): vendor_partition_alias,
+    libs_proto_21_12: lib_fixup_vendorcompat,
+}
 
 module = ExtractUtilsModule(
     'nezha', 'xiaomi', blob_fixups={}, lib_fixups=lib_fixups,
@@ -45,7 +51,12 @@ module = ExtractUtilsModule(
 common_module = ExtractUtilsModule(
     'sm8850-common', 'xiaomi', device_rel_path='device/xiaomi/nezha',
     blob_fixups={}, lib_fixups=lib_fixups,
-    namespace_imports=[p for p in namespace_imports if p != 'vendor/xiaomi/sm8850-common'],
+    namespace_imports=[p for p in namespace_imports if p != 'vendor/xiaomi/sm8850-common'] + [
+        'vendor/qcom/opensource/dataservices',
+        'hardware/qcom-caf/wlan',
+        'vendor/qcom/opensource/commonsys/display',
+        'vendor/xiaomi/nezha',
+    ],
     skip_main_proprietary_file=True,
     proprietary_files=[ProprietaryFile(str(DEVICE / 'proprietary-files-common.txt'))],
 )
@@ -100,6 +111,11 @@ def apply_reviewed_transforms(destination, entry, manifest):
             if digest(tool) != manifest['transform_tool']['sha256'] or op['value'] != destination.name:
                 raise RuntimeError('Unreviewed SONAME/tool')
             subprocess.run([str(tool), '--set-soname', op['value'], str(destination)], check=True)
+        elif op['kind'] == 'replace_needed':
+            tool = ROOT / manifest['transform_tool']['path']
+            if digest(tool) != manifest['transform_tool']['sha256']:
+                raise RuntimeError('Reviewed patchelf changed')
+            subprocess.run([str(tool), '--replace-needed', op['old'], op['new'], str(destination)], check=True)
         elif op['kind'] == 'add_needed':
             tool = ROOT / manifest['transform_tool']['path']
             if digest(tool) != manifest['transform_tool']['sha256']:

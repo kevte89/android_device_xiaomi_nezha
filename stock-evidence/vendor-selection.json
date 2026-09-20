@@ -10295,7 +10295,16 @@
       "type": "file",
       "sha256": "12d120ab982b6364352b64c79289ae479de570c31d26788ac558282b91024dde",
       "sha1": "605c4a49e38211da4c9e3ad85f82fa6074584a95",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.sensors-V2-ndk.so",
+          "new": "android.hardware.sensors-V3-ndk.so"
+        }
+      ],
+      "output_sha1": "f63ef0407b6b8e46e51cbe4e48f5aec29078227d",
+      "output_sha256": "bdb563f180cd0880a7742fd8a7da8cc6d0122a9993028f76140821bccb50271c"
     },
     {
       "path": "odm/lib64/hw/fingerprint.goodix_us2.so",
@@ -10438,7 +10447,16 @@
       "type": "file",
       "sha256": "7007169fe8f41602a93db07d221a79e3e0b32d995dabc22394a756336e13484d",
       "sha1": "c2dea2dd4c63f288f9cf50f83d8addf0b6cfcb5e",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.sensors-V2-ndk.so",
+          "new": "android.hardware.sensors-V3-ndk.so"
+        }
+      ],
+      "output_sha1": "9f9c160e39b65a20b1a9b884722d791e032a3baa",
+      "output_sha256": "b49e9a64ab672f2c17bba608c45514298720f389e80a235279830f33fe81721d"
     },
     {
       "path": "odm/lib64/libaiassistae.so",
@@ -10680,7 +10698,16 @@
       "type": "file",
       "sha256": "ab62362df36142d15b74dc2d94e39a65c8896f82f5bcec67ad4453fa5e68f751",
       "sha1": "1d236efc80c109dff152d85bf61301532fb069a7",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.sensors-V2-ndk.so",
+          "new": "android.hardware.sensors-V3-ndk.so"
+        }
+      ],
+      "output_sha1": "45b24a60f16b651c71cdac6c4472484f2586d12a",
+      "output_sha256": "2cf7c5a5c34350e55475dd5dd47329eb55b637a6d8899d5ba9b29765adff4387"
     },
     {
       "path": "odm/lib64/libcrussp.so",
@@ -10724,7 +10751,16 @@
       "type": "file",
       "sha256": "52f74962b58cd48959f54a7b1b55678dedf30b663a6e07ee57c81cb73041f538",
       "sha1": "052208c01667435dbc81261c3cd9f50ae4eeb862",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.sensors-V2-ndk.so",
+          "new": "android.hardware.sensors-V3-ndk.so"
+        }
+      ],
+      "output_sha1": "fcb6c605a630731d9b4374a2a3122067910b490a",
+      "output_sha256": "68298cdcce864da66dc291c02a5e9668594c480003e768b526680717e4c65aea"
     },
     {
       "path": "odm/lib64/libdlrmsc.so",
@@ -10779,7 +10815,16 @@
       "type": "file",
       "sha256": "8b47673fc90df38c9e6e97a9ab40d1017bc67003fb86d867bdb85093fb311d63",
       "sha1": "5857edac3d16afe212cfd82605f3758acc77d754",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.sensors-V2-ndk.so",
+          "new": "android.hardware.sensors-V3-ndk.so"
+        }
+      ],
+      "output_sha1": "a6197a1735c1ecd4ef96652678dfaa597e21320b",
+      "output_sha256": "258cc137445bf26bec3ae0fbde54d1ced61cd5f98fae2d7104a88a4220bcdbde"
     },
     {
       "path": "odm/lib64/libfpsmonitor.so",
@@ -10856,7 +10901,16 @@
       "type": "file",
       "sha256": "6ba0a04ca0c45915dd9d40fe604d5eedfa8c14b621c4dd652e608f19d6d1ffa9",
       "sha1": "b1476ec8a68ea42eaf512db2243ccc7110942f9e",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.sensors-V2-ndk.so",
+          "new": "android.hardware.sensors-V3-ndk.so"
+        }
+      ],
+      "output_sha1": "62cf23ef32ffedf97efa721abdebd34300b5e340",
+      "output_sha256": "199017dbea131b6b30439ac61b6324bab62890caa050ad00ab004da649cc31c3"
     },
     {
       "path": "odm/lib64/libmage.so",
@@ -10900,7 +10954,16 @@
       "type": "file",
       "sha256": "cf399ac310338b9e5503b380e9b9e700e13bc1851af9b7c3a89a50c6ceaec068",
       "sha1": "4dd006aa4e573341b672d75333260700be30b965",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.sensors-V2-ndk.so",
+          "new": "android.hardware.sensors-V3-ndk.so"
+        }
+      ],
+      "output_sha1": "c621595db2813e15d8340840a6f157d57904deba",
+      "output_sha256": "e873d7c57ba113081b6a495031dea933971d950b63566437c34836d574373dc3"
     },
     {
       "path": "odm/lib64/libmiClstc.so",
@@ -10944,7 +11007,16 @@
       "type": "file",
       "sha256": "bd4fbd69e5ecb6bc1de3e3436c6c419a804cb86d158bd02a25947fa230bc8ebf",
       "sha1": "43ebe632cb307fe0ffb5717dde4599a0f758be24",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.sensors-V2-ndk.so",
+          "new": "android.hardware.sensors-V3-ndk.so"
+        }
+      ],
+      "output_sha1": "5b440ade60c92f0c4eb42b162ba2a081ea0c7d69",
+      "output_sha256": "c471f049f5b2e25aace4f80bb88ebe22e00ce7f34d95aab4465e0bc039dda033"
     },
     {
       "path": "odm/lib64/libmiXmlParser.so",
@@ -11384,7 +11456,16 @@
       "type": "file",
       "sha256": "19758d5e140faebd347a7c50b150ed58aa988bbc3b781e7e8ffc4659199bbd09",
       "sha1": "33045a9276d369e00ed1f86de2856d805b18f670",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.sensors-V2-ndk.so",
+          "new": "android.hardware.sensors-V3-ndk.so"
+        }
+      ],
+      "output_sha1": "907581e064584fa761dd8580cf1064c6571abbc9",
+      "output_sha256": "a205e3bd34d1ee600d3502a4c94d47a91d78b1a948c012a6ad8f111f46308817"
     },
     {
       "path": "odm/lib64/libportrait_repair_qnn.so",
@@ -11439,7 +11520,16 @@
       "type": "file",
       "sha256": "4e20961530ff5bc74c76d6bf6c0e653d5544f8381a98ac418fdd52b55c0fac3b",
       "sha1": "adb780bacc901e4ad64551cb4f83b50e694949c5",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.sensors-V2-ndk.so",
+          "new": "android.hardware.sensors-V3-ndk.so"
+        }
+      ],
+      "output_sha1": "7addb56f5d69f06ee78e44ed51a5a1b1a8ffb744",
+      "output_sha256": "4ce46a0cf45a21686043ed92fb36448478c4d1ea22c83bc6c5d02d0365a22c08"
     },
     {
       "path": "odm/lib64/libsdr2hdr.so",
@@ -11450,7 +11540,16 @@
       "type": "file",
       "sha256": "39ec3af455fb887d6d4413aee309a74ff631e72ba11777daf6cc7e5bcec30a4f",
       "sha1": "c6e4127141a1330d5798a64e429b42505224c500",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.sensors-V2-ndk.so",
+          "new": "android.hardware.sensors-V3-ndk.so"
+        }
+      ],
+      "output_sha1": "bc08cce1cd112633b615d6b48353e80674057354",
+      "output_sha256": "0a4c4a3d8c71612d1cb79e9163f4d2f4583611483c130f4c65d412ff0a01eb65"
     },
     {
       "path": "odm/lib64/libsre.so",
@@ -11461,7 +11560,16 @@
       "type": "file",
       "sha256": "eabf900973431f8aceac59d0cd9415bc952497653de641338e1fdc5637b3b15b",
       "sha1": "3e204047afbab6856eb00b7fb7e96f45be4984a4",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.sensors-V2-ndk.so",
+          "new": "android.hardware.sensors-V3-ndk.so"
+        }
+      ],
+      "output_sha1": "6044a65883db66723b01ed83f470b133f8a725a1",
+      "output_sha256": "488e0e6815932a2c4f72282f6910bbe4841aaa1b8baa3e92a12179b40028b4e2"
     },
     {
       "path": "odm/lib64/libsupermoon.so",
@@ -11549,7 +11657,16 @@
       "type": "file",
       "sha256": "94f1054db152bda863746aa2e2bf7f64503a3fc695cdb228f6538047e0ebe829",
       "sha1": "98a034cddce41b9a3a51dea82ad1007579757512",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.sensors-V2-ndk.so",
+          "new": "android.hardware.sensors-V3-ndk.so"
+        }
+      ],
+      "output_sha1": "4ab0d3031e4a748a27e979ae95cc507325660158",
+      "output_sha256": "d9e51bc49beba7008ad2ee68bd647ed89236587cbf721c107841a49fc95125af"
     },
     {
       "path": "odm/lib64/libvega_common_ecd.so",
@@ -11579,7 +11696,16 @@
       "type": "file",
       "sha256": "bb08040fc066f33ae47efe91cbebc86fe219c7a96c1a18c5d42be4529b3df4e9",
       "sha1": "41df159fdf1f7fc9794ddbe4493d97e5b99d8b60",
-      "group": "common"
+      "group": "common",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.sensors-V2-ndk.so",
+          "new": "android.hardware.sensors-V3-ndk.so"
+        }
+      ],
+      "output_sha1": "fdf0808f1258a43224927b3cb24e86f8dbe06489",
+      "output_sha256": "e1c2cc7d187cf07cb27705388f109c70c7a02ef43e08d33cf5c8d6750bb36c1f"
     },
     {
       "path": "odm/lib64/libwa_widelens_undistort.so",
@@ -34180,6 +34306,70 @@
       "sha256": "9f2688d315b7e8a585234b17d735c84dcc132fed74d45238192db1e9dbc396c8",
       "sha1": "c0f783af0c8d0c5067d7f4969fa8e1280fd2f9a4",
       "group": "common"
+    },
+    {
+      "path": "odm/lib64/libaiawb.so",
+      "source": "/home/kevte89/android/stock/nezha_a16_cn_309/super_extracted/odm_a.fs/lib64/libaiawb.so",
+      "partition_image": "4a269421a596c1eb1d90c982ef5497591ed1091e424a21bb9e7a83cf1a943ff5",
+      "size": 13669944,
+      "mode": "0o644",
+      "type": "file",
+      "sha256": "854c707ec6d8b9b0b0c65d8ded7f3768c77c8fe53ff327398a9f86bfed5ab6c2",
+      "sha1": "bf94ab21f62639a6e51b3840d95016e11ffa7489",
+      "group": "device"
+    },
+    {
+      "path": "odm/lib64/libdynamicelvss.so",
+      "source": "/home/kevte89/android/stock/nezha_a16_cn_309/super_extracted/odm_a.fs/lib64/libdynamicelvss.so",
+      "partition_image": "4a269421a596c1eb1d90c982ef5497591ed1091e424a21bb9e7a83cf1a943ff5",
+      "size": 84968,
+      "mode": "0o644",
+      "type": "file",
+      "sha256": "78806d4740d0148fd1090be36f2d59ef66ad44d94a7fbe82512a6eef0dfa307e",
+      "sha1": "bdbb2894a621c27ac6fcd6bdf37a7aadbdc255d2",
+      "group": "device",
+      "transforms": [
+        {
+          "kind": "replace_needed",
+          "old": "android.hardware.sensors-V2-ndk.so",
+          "new": "android.hardware.sensors-V3-ndk.so"
+        }
+      ],
+      "output_sha1": "0e9b69da8b2c2f73154bff6c6ee04959cc366ddb",
+      "output_sha256": "1e4b30e24f0d6742a448d19d95fe1c868387ff9a2e02dfce045103ff572281fc"
+    },
+    {
+      "path": "vendor/lib64/libultrasound_notify.so",
+      "source": "/home/kevte89/android/stock/nezha_a16_cn_309/super_extracted/vendor_a.fs/lib64/libultrasound_notify.so",
+      "size": 51432,
+      "mode": "0o644",
+      "type": "file",
+      "sha256": "4923bc10ae19ba6937484c37a7258c5bd02dcc1f018a32d8596bce5c96741d6b",
+      "sha1": "400d3f223efa80d6e7ab7b0c265d112848a1e2d3",
+      "group": "device",
+      "partition_image": "c9c2a03b61cd7c96466f09ffebf723382f430fd1389b1b73186270f3e15dfb20"
+    },
+    {
+      "path": "vendor/lib64/liblegendmsg.so",
+      "source": "/home/kevte89/android/stock/nezha_a16_cn_309/super_extracted/vendor_a.fs/lib64/liblegendmsg.so",
+      "size": 97880,
+      "mode": "0o644",
+      "type": "file",
+      "sha256": "475dfe4846f934013e2bffc13e75930373a8ad3f6323c30c9e6d45c6d16e17b5",
+      "sha1": "f062a8ce6c79e297925cc6b5895957612e153a1c",
+      "group": "device",
+      "partition_image": "c9c2a03b61cd7c96466f09ffebf723382f430fd1389b1b73186270f3e15dfb20"
+    },
+    {
+      "path": "vendor/lib64/libvega_common.so",
+      "source": "/home/kevte89/android/stock/nezha_a16_cn_309/super_extracted/vendor_a.fs/lib64/libvega_common.so",
+      "size": 19369624,
+      "mode": "0o644",
+      "type": "file",
+      "sha256": "36cc6464b01c0f15e03cb89293bd8cd851e18de90b27f286ad14d32c9b0d95ef",
+      "sha1": "f25ec402c576e19d0cb95d52749120367d9ec34b",
+      "group": "device",
+      "partition_image": "c9c2a03b61cd7c96466f09ffebf723382f430fd1389b1b73186270f3e15dfb20"
     }
   ],
   "build_metadata": {
@@ -34352,13 +34542,40 @@
       "REQUIRED=manifest_audiocorehal_default.xml"
     ],
     "vendor/lib64/hw/libaudioeffecthal.qti.so": [
+      "DISABLE_DEPS",
       "REQUIRED=audioeffectservice_qti.xml"
+    ],
+    "vendor/lib64/libtensorflowlite_c.so": [
+      "MODULE_SUFFIX=_vendor"
+    ],
+    "vendor/lib64/libdng_sdk.so": [
+      "MODULE_SUFFIX=_vendor"
+    ],
+    "vendor/lib64/soundfx/libqcomvoiceprocessing.so": [
+      "DISABLE_DEPS"
+    ],
+    "vendor/lib64/soundfx/libdlbvolaidl.so": [
+      "DISABLE_DEPS"
+    ],
+    "vendor/lib64/soundfx/libqcompostprocbundle.so": [
+      "DISABLE_DEPS"
+    ],
+    "vendor/lib64/soundfx/libswspatializeraidl.so": [
+      "DISABLE_DEPS"
+    ],
+    "vendor/lib64/libaudioplatformconverter.qti.so": [
+      "DISABLE_DEPS"
+    ],
+    "vendor/lib64/hw/libaudiocorehal.qti.so": [
+      "DISABLE_DEPS"
     ]
   },
   "build_library_aliases": [
     "vendor.qti.ImsRtpService-V2-ndk",
     "vendor.qti.qccsyshal_aidl-V1-ndk",
-    "vendor.qti.qccvndhal_aidl-V1-ndk"
+    "vendor.qti.qccvndhal_aidl-V1-ndk",
+    "libtensorflowlite_c",
+    "libdng_sdk"
   ],
   "transform_tool": {
     "path": "prebuilts/extract-tools/linux-x86/bin/patchelf-0_18",
